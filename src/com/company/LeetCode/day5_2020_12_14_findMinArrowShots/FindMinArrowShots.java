@@ -43,6 +43,58 @@ public class FindMinArrowShots {
         System.out.println("minArrowShots = " + minArrowShots);
     }
 
+    /**
+     *  public static void main(String[] args) {
+     *         SearchRequestDTO searchRequestDTO = new SearchRequestDTO();
+     *         OrderItemDTO orderItemDTO = new OrderItemDTO();
+     *         orderItemDTO.setSort("asc");
+     *         orderItemDTO.setKey("time");
+     *         searchRequestDTO.setOrder(orderItemDTO);
+     *         boolean sortFlag = false;
+     *         List<HotProjectDTO> hotProjectDTOS = new ArrayList<>();
+     *         HotProjectDTO hotProjectDTO = new HotProjectDTO();
+     *         GemsCardResultDTO gemsCardResultDTO = new GemsCardResultDTO();
+     *         gemsCardResultDTO.setLocationType("show");
+     *         gemsCardResultDTO.setNextTime("15:00");
+     *         //gemsCardResultDTO.setWaitTime("9");
+     *         hotProjectDTO.setGemsCardResultDTO(gemsCardResultDTO);
+     *         hotProjectDTOS.add(hotProjectDTO);
+     *
+     *
+     *         HotProjectDTO hotProjectDTO2 = new HotProjectDTO();
+     *         GemsCardResultDTO gemsCardResultDTO2 = new GemsCardResultDTO();
+     *         gemsCardResultDTO2.setLocationType("show");
+     *         gemsCardResultDTO2.setNextTime("13:00");
+     *         gemsCardResultDTO2.setWaitTime("8");
+     *         hotProjectDTO2.setGemsCardResultDTO(gemsCardResultDTO2);
+     *         hotProjectDTOS.add(hotProjectDTO2);
+     *
+     *
+     *         HotProjectDTO hotProjectDTO3 = new HotProjectDTO();
+     *         GemsCardResultDTO gemsCardResultDTO3 = new GemsCardResultDTO();
+     *         gemsCardResultDTO3.setLocationType("show");
+     *         gemsCardResultDTO3.setNextTime("11:00");
+     *         gemsCardResultDTO3.setWaitTime("9");
+     *         hotProjectDTO3.setGemsCardResultDTO(gemsCardResultDTO3);
+     *
+     *         hotProjectDTOS.add(hotProjectDTO3);
+     *
+     *
+     *         HotProjectDTO hotProjectDTO4 = new HotProjectDTO();
+     *         GemsCardResultDTO gemsCardResultDTO4 = new GemsCardResultDTO();
+     *         gemsCardResultDTO4.setLocationType("show");
+     *         //gemsCardResultDTO4.setNextTime("12:00");
+     *         //gemsCardResultDTO4.setWaitTime("3");
+     *         hotProjectDTO4.setGemsCardResultDTO(gemsCardResultDTO4);
+     *         hotProjectDTOS.add(hotProjectDTO4);
+     *         OrderByTime(searchRequestDTO, false, "ddd", hotProjectDTOS);
+     *         System.out.println("hotProjectDTOS = " + hotProjectDTOS.toString());
+     *
+     *
+     *     }
+     * @param points
+     * @return
+     */
     public static int findMinArrowShots(int[][] points) {
         if (points.length <= 0) {
             return 0;
