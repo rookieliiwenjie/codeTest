@@ -41,31 +41,36 @@ public class LinkedTransferDemo {
     }
 
     public void blockQueue() {
-        AtomicBoolean offer = new AtomicBoolean(true);
         LinkedBlockingQueue<Integer> linkedBlockingQueue = new LinkedBlockingQueue<>(3);
         linkedBlockingQueue.add(1);
         linkedBlockingQueue.add(2);
         linkedBlockingQueue.add(3);
         System.out.println("linkedBlockingQueue = " + linkedBlockingQueue);
-
-
         new Thread(() -> {
 
-            try {
+            /*try {
                 Thread.sleep(10000);
-                offer.set(linkedBlockingQueue.offer(3, 5, TimeUnit.SECONDS));
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }*/
+            //linkedBlockingQueue.offer(4);
+            System.out.println("linkedBlockingQueue = " + linkedBlockingQueue);
+            try {
+                boolean offer = linkedBlockingQueue.offer(3, 5, TimeUnit.SECONDS);
                 System.out.println("offer = " + offer);
+
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }).run();
-        while (     offer.get()) {
-            new Thread(() -> {
-                System.out.println(" ------------------ ");
-                Integer poll = linkedBlockingQueue.poll();
-                System.out.println("poll = " + poll);
-            }).run();
-        }
+        }, "OFFER").start();
+
+        new Thread(() -> {
+
+            System.out.println(" ------------------ ");
+            Integer poll = linkedBlockingQueue.poll();
+            System.out.println("linkedBlockingQueue = " + linkedBlockingQueue);
+            System.out.println("poll = " + poll);
+        }, "POLL").start();
         System.out.println("linkedBlockingQueue = " + linkedBlockingQueue);
 
     }

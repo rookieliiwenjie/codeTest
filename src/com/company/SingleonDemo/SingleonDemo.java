@@ -11,7 +11,7 @@ public class SingleonDemo {
         if (instance == null) {
             synchronized (SingleonDemo.class) {
                 if (instance == null) {
-                    instance = new SingleonDemo();
+                     instance = new SingleonDemo();
 
                 }
             }

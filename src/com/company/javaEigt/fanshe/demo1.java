@@ -13,13 +13,13 @@ public class demo1 {
         return "1234";
     }
     public static void main(String[] args) throws NoSuchMethodException {
-        Class<demo1> demo1Class = demo1.class;
+        /*Class<demo1> demo1Class = demo1.class;
         Method declaredMethods = demo1Class.getDeclaredMethod("Byte",String.class,String.class);
         Parameter[] parameters = declaredMethods.getParameters();
         Arrays.stream(parameters).forEach(parameter -> {
 
             System.out.println("parameter = " + parameter);
-        });
+        });*/
 
 
     }

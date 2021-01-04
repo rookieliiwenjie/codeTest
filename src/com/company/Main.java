@@ -10,8 +10,17 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
 
-    public static void main(String[] args) throws UnknownHostException {
-        Integer s2 = 10;
+    public static void main(String[] args) {
+        int count = 0;
+        String s = "succcesss";
+        boolean succcesssss = s.contains("succces");
+        System.out.println("s = " + succcesssss);
+       /* do {
+            count++;
+            System.out.println("count = " + count);
+        } while (count < 3);
+        System.out.println("count = " + count);*/
+        /*Integer s2 = 10;
         Integer s1 = 9;
         Integer s3 = 15;
         List<Integer> strings = new ArrayList<>();
@@ -25,7 +34,7 @@ public class Main {
                 return o1-o2;
             }
         });
-        System.out.println("strings.toString() = " + strings.toString());
+        System.out.println("strings.toString() = " + strings.toString());*/
 
         /*InetAddress addr = InetAddress.getLocalHost();
         System.out.println(addr.getHostAddress());
