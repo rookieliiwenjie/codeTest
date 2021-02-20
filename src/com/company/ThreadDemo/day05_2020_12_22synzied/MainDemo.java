@@ -16,7 +16,6 @@ public class MainDemo {
 
             }
         }, "A");
-        threadA.start();
 
         Thread thread = new Thread(() -> {
             for (int i = 1; i <= 100; i++) {
@@ -25,7 +24,8 @@ public class MainDemo {
         }, "B");
 
         thread.start();
-        System.out.println("Thread.activeCount() = " + Thread.activeCount());
+        threadA.start();
+        /*System.out.println("Thread.activeCount() = " + Thread.activeCount());
         while (Thread.activeCount() > 2) {
             Thread.yield();
             //;
@@ -35,6 +35,9 @@ public class MainDemo {
         //"ss".intern();
         thread.join();
         //threadA.join();
+        */
+        thread.join();
+        threadA.join();
         System.out.println("x = " + x);
 
     }

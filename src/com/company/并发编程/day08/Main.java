@@ -11,17 +11,19 @@ public class Main {
         SyconDemo syconDemo = new SyconDemo();
 
 
+
         Thread thread2 = new Thread(() -> {
             syconDemo.read();
             System.out.println("syconDemo.flag QIAN = " + syconDemo.flag);
-            while (syconDemo.flag) {
+            while (!syconDemo.flag) {
 
             }
             System.out.println("syconDemo.flag HOU = " + syconDemo.flag);
 
         });
         thread2.start();
-        TimeUnit.SECONDS.sleep(10);
+
+        //TimeUnit.SECONDS.sleep(10);
         Thread thread = new Thread(() -> {
             System.out.println(" write============== ");
             syconDemo.write();

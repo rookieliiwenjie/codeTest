@@ -7,15 +7,16 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * @create 2021/2/2
  */
 public class SyconDemo {
-    volatile boolean flag = true;
+    volatile boolean flag = false;
     int a = 0;
-    public synchronized void write() {
+
+    public  void write() {
         a = 1;
-        flag = false;
+        flag = true;
     }
 
-    public synchronized void read() {
-        if (!flag) {
+    public  void read() {
+        if (flag) {
             int i = a;
             System.out.println("a = " + a);
         }
