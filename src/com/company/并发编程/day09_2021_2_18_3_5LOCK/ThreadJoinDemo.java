@@ -8,17 +8,16 @@ import java.util.concurrent.TimeUnit;
  */
 public class ThreadJoinDemo {
     public static void main(String[] args) {
-        ThreadJoinDemo t = new ThreadJoinDemo();
         Thread threadA = new Thread(()->{
-        synchronized (t){
+        synchronized (ThreadJoinDemo.class){
             try {
                 System.out.println("开始A");
-                t.wait(10000);
+                ThreadJoinDemo.class.wait(10000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
             System.out.println(Thread.currentThread().getName());
-            t.notify();
+            ThreadJoinDemo.class.notify();
         }
 
         },"A");
