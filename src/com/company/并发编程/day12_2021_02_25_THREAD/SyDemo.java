@@ -1,4 +1,4 @@
-package com.company.并发编程.day012_2021_02_25_THREAD;
+package com.company.并发编程.day12_2021_02_25_THREAD;
 
 /**
  * @Author rookie.li
