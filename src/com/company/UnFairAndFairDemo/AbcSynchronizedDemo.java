@@ -17,7 +17,7 @@ public class AbcSynchronizedDemo {
 
         @Override
         public void run() {
-            int count = 10;
+            int count = 1000;
             while (count > 0) {
                 synchronized (prev) {
                     synchronized (self) {
