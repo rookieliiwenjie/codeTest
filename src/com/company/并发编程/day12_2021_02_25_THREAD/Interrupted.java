@@ -15,6 +15,7 @@ public class Interrupted {
         Thread busyThread = new Thread(new BusyRunner(), "BusyThread");
         busyThread.setDaemon(true);
         sleepThread.start();
+        sleepThread.interrupt();
         busyThread.start();
 // 休眠5秒，让sleepThread和busyThread充分运行
         try {
@@ -24,12 +25,13 @@ public class Interrupted {
         }
         System.out.println("sleepThread 开始");
 
-        sleepThread.interrupt();
+
         System.out.println("sleepThread end");
 
         busyThread.interrupt();
-        System.out.println("SleepThread interrupted is " + sleepThread.isInterrupted());
-        System.out.println("BusyThread interrupted is " + busyThread.isInterrupted()); // 防止sleepThread和busyThread立刻退出
+        //System.out.println("SleepThread interrupted is " + sleepThread.isInterrupted());
+        // 防止sleepThread和busyThread立刻退出
+        System.out.println("BusyThread interrupted is " + busyThread.isInterrupted());
         //打印错误信息
         try {
             System.out.println("Thread.activeCount() = " + Thread.activeCount());
@@ -44,12 +46,20 @@ public class Interrupted {
     static class SleepRunner extends Thread {
         @Override
         public void run() {
+            System.out.println(Thread.currentThread().isInterrupted()+"start" );
+            while (Thread.currentThread().isInterrupted()) {
+                //强制当前线程复位
+                Thread.interrupted();
+                System.out.println("Thread.currentThread().isInterrupted() = " + Thread.currentThread().isInterrupted());
+            }
+            System.out.println(Thread.currentThread().isInterrupted()+"end" );
             while (true) {
                 try {
-                    TimeUnit.MILLISECONDS.sleep(6);
+
+                    TimeUnit.SECONDS.sleep(6);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
-                    System.out.println(" -------- ");
+                    System.out.println(" -----" );
                 }
             }
         }
