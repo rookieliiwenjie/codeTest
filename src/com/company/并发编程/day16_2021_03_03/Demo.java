@@ -12,8 +12,8 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class Demo {
     public static void main(String[] args) {
         ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
-        reentrantReadWriteLock.readLock();
-        reentrantReadWriteLock.writeLock();
+        reentrantReadWriteLock.readLock().lock();
+        reentrantReadWriteLock.writeLock().lock();
         ReentrantLock reentrantLock = new ReentrantLock();
         try {
             reentrantLock.lock();
