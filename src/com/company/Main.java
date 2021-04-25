@@ -3,17 +3,43 @@ package com.company;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Main {
 
-    public static void main(String[] args) throws UnknownHostException {
-        InetAddress addr = InetAddress.getLocalHost();
+    public static void main(String[] args) {
+        int count = 0;
+        String s = "succcesss";
+        boolean succcesssss = s.contains("succces");
+        System.out.println("s = " + succcesssss);
+       /* do {
+            count++;
+            System.out.println("count = " + count);
+        } while (count < 3);
+        System.out.println("count = " + count);*/
+        /*Integer s2 = 10;
+        Integer s1 = 9;
+        Integer s3 = 15;
+        List<Integer> strings = new ArrayList<>();
+        strings.add(s1);
+        strings.add(s3);
+        strings.add(s2);
+        System.out.println("strings = " + strings);
+        strings.sort(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1-o2;
+            }
+        });
+        System.out.println("strings.toString() = " + strings.toString());*/
+
+        /*InetAddress addr = InetAddress.getLocalHost();
         System.out.println(addr.getHostAddress());
         String hostname = addr.getHostName();
-        System.out.println(hostname);
+        System.out.println(hostname);*/
         /*// Positive example:
         long a = System.currentTimeMillis();
         // Negative example:

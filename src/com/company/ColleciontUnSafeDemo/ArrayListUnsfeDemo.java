@@ -82,10 +82,10 @@ public class ArrayListUnsfeDemo {
         /**
          *
          */
-        VeterDemo();
-        CollectionsSysDemo();
+        //VeterDemo();
+        //CollectionsSysDemo();
         CopyOnWriteArrayListDemo();
-        ReentrantLockDemo();
+        // ReentrantLockDemo();
         /**数据3000
          * Vector use Time is 284
          * Collections use Time is 265
@@ -130,14 +130,26 @@ public class ArrayListUnsfeDemo {
     }
 
     public static void CopyOnWriteArrayListDemo() {
-        List<String> arrayList = new CopyOnWriteArrayList();
+        List<String> arrayList = new CopyOnWriteArrayList<>();
         long startTime = System.currentTimeMillis();
-        for (int i = 0; i < 30000; i++) {
-            new Thread(() -> {
-                arrayList.add(UUID.randomUUID().toString().substring(0, 8));
+        new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
 
-            }).start();
+                arrayList.add(UUID.randomUUID().toString().substring(0, 8));
+            }
+
+        }).start();
+        new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
+
+                arrayList.add(UUID.randomUUID().toString().substring(0, 8));
+            }
+
+        }).start();
+        while (Thread.activeCount() > 2) {
+            Thread.yield();
         }
+        System.out.println("arrayList = " + arrayList.size());
         System.out.println("Collections use Time is " + (System.currentTimeMillis() - startTime) + "\t");
     }
 
