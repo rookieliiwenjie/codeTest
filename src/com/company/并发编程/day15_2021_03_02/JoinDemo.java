@@ -10,14 +10,27 @@ import java.util.concurrent.TimeUnit;
  */
 public class JoinDemo {
     public static void main(String[] args) throws InterruptedException {
-        Thread nowThread = Thread.currentThread();
+        /*Thread nowThread = Thread.currentThread();
         for (int i = 0; i < 10; i++) {
             Thread thread = new Thread(new ThreadJoinDemo(nowThread), i + "");
             thread.start();
             nowThread = thread;
         }
-        //TimeUnit.SECONDS.sleep(5);
-        System.out.println(Thread.currentThread().getName() + new SimpleDateFormat("HH:mm:ss").format(new Date()));
+        TimeUnit.SECONDS.sleep(5);
+        System.out.println(Thread.currentThread().getName() + new SimpleDateFormat("HH:mm:ss").format(new Date()));*/
+        System.out.println(" =kai " );
+        Thread thread = new Thread(()->{
+            try {
+
+                TimeUnit.SECONDS.sleep(5);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(" run" );
+        });
+        thread.start();
+      //  thread.join();
+        System.out.println(" guan" );
 
     }
 
@@ -32,6 +45,7 @@ public class JoinDemo {
         public void run() {
             try {
                 thread.join();
+                //TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
