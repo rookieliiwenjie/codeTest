@@ -16,7 +16,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  */
 public class ReadAndWriteLockDemo {
     static Map<String, String> hashMap = new HashMap<>();
-    static ReentrantReadWriteLock rwl = new ReentrantReadWriteLock();
+    static ReentrantReadWriteLock rwl = new ReentrantReadWriteLock(false);
     static Lock r = rwl.readLock();
     static Lock w = rwl.writeLock();
 
