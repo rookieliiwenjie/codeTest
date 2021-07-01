@@ -1,6 +1,5 @@
 package com.company.LeetCode.day03_2020_12_08;
 
-import com.sun.tools.javac.util.StringUtils;
 
 /**
  * @Author rookie.li

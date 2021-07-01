@@ -10,11 +10,23 @@ import java.util.concurrent.TimeUnit;
  */
 public class JoinDemo {
     public static void main(String[] args) throws InterruptedException {
-        Thread nowThread = Thread.currentThread();
+       /* Thread nowThread = Thread.currentThread();
         for (int i = 0; i < 10; i++) {
             Thread thread = new Thread(new ThreadJoinDemo(nowThread), i + "");
             thread.start();
             nowThread = thread;
+        }*/
+        for (int i = 0; i < 10; i++) {
+            Thread thread = new Thread(()->{
+                System.out.println(" = " );
+                try {
+                    TimeUnit.DAYS.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            });
+            thread.join();
+            thread.start();
         }
         //TimeUnit.SECONDS.sleep(5);
         System.out.println(Thread.currentThread().getName() + new SimpleDateFormat("HH:mm:ss").format(new Date()));

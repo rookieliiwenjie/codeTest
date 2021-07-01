@@ -13,6 +13,8 @@ public class DeamonDemo {
         thread.start();
         TimeUnit.MILLISECONDS.sleep(2000);
         System.out.println("main线程执行完成");
+        thread.interrupt();
+        thread.isInterrupted();
 
     }
 

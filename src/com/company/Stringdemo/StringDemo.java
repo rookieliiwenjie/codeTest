@@ -1,7 +1,6 @@
 package com.company.Stringdemo;
 
 
-import com.sun.tools.javac.util.StringUtils;
 
 import java.util.ArrayList;
 
