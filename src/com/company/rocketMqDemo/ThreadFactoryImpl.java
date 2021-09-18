@@ -10,21 +10,24 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @date 2021-09-15 23:24
  */
 public class ThreadFactoryImpl implements ThreadFactory {
-    private String prefixName;
-    private AtomicInteger index = new AtomicInteger(0);
+
+    private final String prefixName;
+    private final boolean demoe;
+    private final AtomicInteger index = new AtomicInteger(0);
 
     public ThreadFactoryImpl(String prefixName) {
-        this.prefixName = prefixName;
+        this(prefixName, false);
     }
 
-    public ThreadFactoryImpl(String prefixName, AtomicInteger index) {
+    public ThreadFactoryImpl(String prefixName, boolean demoe) {
         this.prefixName = prefixName;
-        this.index = index;
+        this.demoe = demoe;
     }
 
     @Override
     public Thread newThread(Runnable r) {
-        Thread thread = new Thread(r,this.prefixName+this.index.incrementAndGet());
+        Thread thread = new Thread(r, this.prefixName + this.index.incrementAndGet());
+        thread.setDaemon(demoe);
         return thread;
     }
 }
