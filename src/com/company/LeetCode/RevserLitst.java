@@ -200,8 +200,11 @@ public class RevserLitst {
         while (!queue.isEmpty()) {
             List<Integer> newList = new ArrayList<>();
             //需要终止poll
-            int size = queue.size();
-            for (int i = 0; i < size; i++) {
+            /*int size = queue.size();
+            for (int i = 0; i < size; i++) {*/
+            //这里是赋值
+            for (int i = queue.size(); i > 0; i--) {
+                System.out.println("i = " + i);
                 TreeNode poll = queue.poll();
                 newList.add(poll.val);
                 if (poll.left != null) {
@@ -210,6 +213,7 @@ public class RevserLitst {
                 if (poll.right != null) {
                     queue.add(poll.right);
                 }
+                System.out.println("i = " + i);
             }
             list.add(newList);
         }
