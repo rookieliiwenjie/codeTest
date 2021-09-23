@@ -19,40 +19,33 @@ import java.util.concurrent.TimeUnit;
 public class ThreadDemoRocketMq {
 
     /**
-     *     创建线程池的方式
+     * 创建线程池的方式
      */
     static ScheduledThreadPoolExecutor threadPoolExecutor = new ScheduledThreadPoolExecutor(8,
             new ThreadFactoryImpl("ThreadPoolName"));
 
     /**
-     *initialDelay 初始化时间
+     * initialDelay 初始化时间
      * period 延迟几秒执行一次
+     *
      * @param args
      */
     public static void main(String[] args) {
-        ScheduledFuture<?>  scheduledFuture = threadPoolExecutor.schedule(new Callable<Integer>(){
+        ScheduledFuture<?> scheduledFuture = threadPoolExecutor.scheduleAtFixedRate(new Runnable() {
             @Override
-            public Integer call() throws Exception {
-                try {
-                    return 1/0;
-
-                }catch (Exception e){
-                    String name = Thread.currentThread().getName();
-                    System.out.println("name = " + name);
-                }
-                return 1;
+            public void run() {
+                System.out.println("System.currentTimeMillis() = " + System.currentTimeMillis());
             }
-
-
-        }, 4L,  TimeUnit.SECONDS);
+        }, 4L, 2L, TimeUnit.SECONDS);
         try {
-            System.out.println("scheduledFuture = " +  scheduledFuture.get());
+            System.out.println("scheduledFuture = " + scheduledFuture.get());
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
 
     }
-//    public static void getThreadName(ThreadPoolExecutor executorService){
+
+    //    public static void getThreadName(ThreadPoolExecutor executorService){
 //        if (executorService instanceof ThreadPoolExecutor) {
 //            ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor) executorService;
 //            //获取线程工厂
