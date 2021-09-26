@@ -3,6 +3,7 @@ package com.company.BlockingQueueDemo;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * Created by lwj32 on 2020/5/28.
@@ -21,12 +22,13 @@ class ShareRease2 {
     Semaphore semaphore = new Semaphore(1);
     Semaphore semaphoreb = new Semaphore(0);
     Semaphore semaphorec = new Semaphore(0);
-
+    static ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
     public void print5() throws InterruptedException {
         //判断
         ReentrantLock reentrantLock = new ReentrantLock();
         reentrantLock.lockInterruptibly();
-
+        reentrantReadWriteLock.readLock().lock();
+        reentrantReadWriteLock.writeLock().lock();
         //工作
         semaphore.acquire();
         System.out.print("A");
