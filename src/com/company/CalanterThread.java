@@ -30,7 +30,7 @@ public class CalanterThread {
 
     }
 
-    /*public static Date format(String type, String date) {
+    public static Date format(String type, String date) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         try {
             if ("startTime".equals(type)) {
@@ -46,7 +46,6 @@ public class CalanterThread {
         }
         return null;
     }
-*/
     public static Date format(String type, Date date) {
         try {
             if ("startTime".equals(type)) {

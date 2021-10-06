@@ -1,4 +1,4 @@
-package com.company.LeetCode;
+package com.company.LeetCode.list;
 
 /**
  * 在此填写类的用途、注意事项等
@@ -41,18 +41,18 @@ public class GetKthFromEnd {
         head3.next = head4;
         ListNode head5 = new ListNode(5);
         head4.next = head5;
-        getKthFromEnd(head, 2);
+        ListNode kthFromEnd = getKthFromEnd(head, 2);
     }
 
     public static ListNode getKthFromEnd(ListNode head, int k) {
-        ListNode newHead = null;
+        ListNode newHead = head;
         int size = 0;
         while (head != null) {
-            head = head.next;
             size++;
+            head = head.next;
         }
-        for (newHead = head; size > k; size--) {
-            newHead = newHead.next;
+        for (int i = 1; i <= size - k; i++) {
+            newHead =newHead.next;
         }
         return newHead;
     }
