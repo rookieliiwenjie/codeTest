@@ -31,29 +31,34 @@ public class ThreadDemoRocketMq {
      * @param args
      */
     public static void main(String[] args) {
-        ScheduledFuture<?> scheduledFuture = threadPoolExecutor.scheduleAtFixedRate(new Runnable() {
+        ScheduledFuture<?> scheduledFuture = threadPoolExecutor.schedule(new Runnable() {
             @Override
             public void run() {
+                System.out.println(" = " + Thread.currentThread().getName());
                 System.out.println("System.currentTimeMillis() = " + System.currentTimeMillis());
             }
-        }, 4L, 2L, TimeUnit.SECONDS);
+        }, 4L, TimeUnit.SECONDS);
         try {
+            System.out.println(" = " + Thread.currentThread().getName());
             System.out.println("scheduledFuture = " + scheduledFuture.get());
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
+        } finally {
+            threadPoolExecutor.shutdown();
         }
 
     }
 
-    //    public static void getThreadName(ThreadPoolExecutor executorService){
-//        if (executorService instanceof ThreadPoolExecutor) {
-//            ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor) executorService;
-//            //获取线程工厂
-//            ThreadFactory oldThreadFactory = threadPoolExecutor.getThreadFactory();
-//            //在把线程工程设置到包装类 DelegatingThreadFactory ，再设置回线程池。
-//            threadPoolExecutor.setThreadFactory(new MyThreadFactory(oldThreadFactory,threadsContainer));
-//        }
-//    }
+   /* public static void getThreadName(ThreadPoolExecutor executorService) {
+        if (executorService instanceof ThreadPoolExecutor) {
+            ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor) executorService;
+            //获取线程工厂
+            ThreadFactory oldThreadFactory = threadPoolExecutor.getThreadFactory();
+            //在把线程工程设置到包装类 DelegatingThreadFactory ，再设置回线程池。
+            threadPoolExecutor.setThreadFactory(new MyThreadFactory(oldThreadFactory, threadsContainer));
+        }
+    }*/
+
     private void CatcheThread() {
 //        ExecutorService executorService = Executors.newCachedThreadPool();
 //        executorService
