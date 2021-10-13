@@ -132,6 +132,7 @@ public class RevserLitst {
         return pre;
     }
 
+
     public Linked_List reverseList(Linked_List head) {
         Linked_List prev = null;
         Linked_List curr = head;//当前节点
@@ -177,17 +178,48 @@ public class RevserLitst {
      * @return
      */
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(3);
-        TreeNode rootLeft = new TreeNode(9);
-        TreeNode rootRight = new TreeNode(20);
-        root.left = rootLeft;
-        root.right = rootRight;
-        TreeNode rootRightLeft = new TreeNode(15);
-        TreeNode rootRightRight = new TreeNode(7);
-        rootRight.right = rootRightRight;
-        rootRight.left = rootRightLeft;
-        List<List<Integer>> list = levelOrder(root);
-        System.out.println("list = " + list);
+//        TreeNode root = new TreeNode(3);
+//        TreeNode rootLeft = new TreeNode(9);
+//        TreeNode rootRight = new TreeNode(20);
+//        root.left = rootLeft;
+//        root.right = rootRight;
+//        TreeNode rootRightLeft = new TreeNode(15);
+//        TreeNode rootRightRight = new TreeNode(7);
+//        rootRight.right = rootRightRight;
+//        rootRight.left = rootRightLeft;
+//        List<List<Integer>> list = levelOrder(root);
+//        System.out.println("list = " + list);
+
+    }
+
+    public ListNode reverseListDiGui(ListNode head) {
+//        if (head == null) {
+//            return null;
+//        }
+//        return head.next = reverseListDiGui(head);
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode newHead = reverseList(head.next);
+        head.next.next = head;
+        head.next = null;
+        return newHead;
+    }
+
+    public ListNode reverseListDieDai(ListNode head) {
+        ListNode prev = null;
+        ListNode curr = head;
+        while (curr != null) {
+            ListNode next = curr.next;
+            //记录当前节点
+            curr.next = prev;
+            //将现在节点赋值给前一个节点
+            prev = curr;
+            //赋值当前节点
+            curr = next;
+
+        }
+        return prev;
     }
 
     public static List<List<Integer>> levelOrder(TreeNode root) {

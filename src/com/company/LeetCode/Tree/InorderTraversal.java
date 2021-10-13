@@ -1,6 +1,8 @@
 package com.company.LeetCode.Tree;
 
 import java.util.ArrayList;
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -26,7 +28,20 @@ public class InorderTraversal {
         List<Integer> integers = inorderTraversal(head);
         System.out.println("integers = " + integers);
     }
-
+//    public static List<Integer> inorderTraversal2(TreeNode root) {
+//        List<Integer> list = new ArrayList<>();
+//        Deque<TreeNode> stack = new LinkedList<>();
+//        while (root!=null && !stack.isEmpty()){
+//            TreeNode leftNode = root.left;
+//            while (leftNode!=null){
+//                stack.add(leftNode.left);
+//            }
+//            TreeNode pop = stack.pop();
+//            if(pop!=null)
+//
+//        }
+//        return list;
+//    }
     public static List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         inorder(root,list);
