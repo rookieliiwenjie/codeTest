@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * 在此填写类的用途、注意事项等
@@ -60,7 +61,34 @@ public class ReverseWords {
         s = s.trim();
         List<String> strings = Arrays.asList(s.split(" "));
         Collections.reverse(strings);
-        return String.join(" ",strings);
+        return String.join(" ", strings);
+
+    }
+
+    public static void main(String[] args) {
+        String s = reverseWordsTwo("the sky is blue");
+        System.out.println("s = " + s);
+    }
+
+    public static String reverseWordsTwo(String s) {
+        s = s.trim();
+        List<String> strings = new ArrayList<>();
+        String newString = "";
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) != ' ') {
+                newString = newString + s.charAt(i);
+            } else if (!newString.isEmpty()) {
+                strings.add(newString);
+                newString = "";
+            }
+        }
+        if(!newString.isEmpty()){
+            strings.add(newString);
+        }
+        Collections.reverse(strings);
+//        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor();
+//        threadPoolExecutor.
+        return String.join(" ", strings);
 
     }
 }
