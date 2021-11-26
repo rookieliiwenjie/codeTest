@@ -16,9 +16,7 @@ public class ColorFactory extends AbstractFactory{
             if(color.equals(colorEnum[i].getDesc())){
                 try {
                     return (Color) colorEnum[i].getClazz().newInstance();
-                } catch (InstantiationException e) {
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
+                } catch (InstantiationException | IllegalAccessException e) {
                     e.printStackTrace();
                 }
             }

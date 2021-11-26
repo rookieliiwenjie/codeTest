@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class DeamonDemo {
     public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(new DeamonThread(), "de");
-        thread.setDaemon(true);
+        //thread.setDaemon(true);
         thread.start();
         TimeUnit.MILLISECONDS.sleep(2000);
         System.out.println("main线程执行完成");

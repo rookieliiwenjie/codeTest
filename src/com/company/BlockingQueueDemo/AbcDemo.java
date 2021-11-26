@@ -1,8 +1,10 @@
 package com.company.BlockingQueueDemo;
 
+import java.util.HashSet;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * Created by lwj32 on 2020/5/28.
@@ -21,12 +23,13 @@ class ShareRease2 {
     Semaphore semaphore = new Semaphore(1);
     Semaphore semaphoreb = new Semaphore(0);
     Semaphore semaphorec = new Semaphore(0);
-
+    static ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
     public void print5() throws InterruptedException {
         //判断
         ReentrantLock reentrantLock = new ReentrantLock();
         reentrantLock.lockInterruptibly();
-
+        reentrantReadWriteLock.readLock().lock();
+        reentrantReadWriteLock.writeLock().lock();
         //工作
         semaphore.acquire();
         System.out.print("A");
@@ -58,7 +61,11 @@ class ShareRease2 {
 public class AbcDemo {
     public static void main(String[] args) {
         ShareRease2 shareRease = new ShareRease2();
-        new Thread(() -> {
+        int i1 = shareRease.hashCode();
+        HashSet<Integer> hashSet = new HashSet<>();
+        hashSet.add(1);
+        System.out.println("i1 = " + i1);
+        /*new Thread(() -> {
 
             try {
                 for (int i = 0; i < 10; i++) {
@@ -87,7 +94,7 @@ public class AbcDemo {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }).start();
+        }).start();*/
     }
 }
 

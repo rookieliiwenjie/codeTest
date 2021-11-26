@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         //StringBuilder stringBuilder = new StringBuilder();
         //Annotation annotation
-        MealBuilder mealBuilder = new MealBuilder();
-        mealBuilder.chickenAndCokeMeal().showItem();
+        MealBuilder malBuilder = new MealBuilder();
+        malBuilder.chickenAndCokeMeal().showItem();
     }
 }
