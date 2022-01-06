@@ -8,6 +8,6 @@ package com.company.ABADemo;
  */
 public interface demo {
    default void demo2() {
-    System.out.println("sdfd");
+    System.out.println("");
     }
 }
