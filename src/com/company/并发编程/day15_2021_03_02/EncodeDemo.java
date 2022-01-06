@@ -1,15 +1,11 @@
 package com.company.并发编程.day15_2021_03_02;
 
-import com.sun.tools.javac.util.StringUtils;
-import com.sun.xml.internal.bind.v2.runtime.output.Encoded;
 
 import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
-import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.Date;
 
 /**
  * @Author rookie.li
