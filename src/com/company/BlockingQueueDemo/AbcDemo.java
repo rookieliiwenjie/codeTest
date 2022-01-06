@@ -60,12 +60,12 @@ class ShareRease2 {
 
 public class AbcDemo {
     public static void main(String[] args) {
-        ShareRease2 shareRease = new ShareRease2();
-        int i1 = shareRease.hashCode();
-        HashSet<Integer> hashSet = new HashSet<>();
-        hashSet.add(1);
-        System.out.println("i1 = " + i1);
-        /*new Thread(() -> {
+        // ShareRease2 shareRease = new ShareRease2();
+        // int i1 = shareRease.hashCode();
+        // HashSet<Integer> hashSet = new HashSet<>();
+        // hashSet.add(1);
+        // System.out.println("i1 = " + i1);
+        new Thread(() -> {
 
             try {
                 for (int i = 0; i < 10; i++) {
@@ -94,7 +94,7 @@ public class AbcDemo {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }).start();*/
+        }).start();
     }
 }
 
