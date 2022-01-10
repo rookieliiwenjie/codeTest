@@ -2,7 +2,6 @@ package com.company.BlockingQueueDemo;
 
 import java.util.HashSet;
 import java.util.concurrent.Semaphore;
-import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
@@ -60,11 +59,11 @@ class ShareRease2 {
 
 public class AbcDemo {
     public static void main(String[] args) {
-        // ShareRease2 shareRease = new ShareRease2();
-        // int i1 = shareRease.hashCode();
-        // HashSet<Integer> hashSet = new HashSet<>();
-        // hashSet.add(1);
-        // System.out.println("i1 = " + i1);
+        ShareRease2 shareRease = new ShareRease2();
+        int i1 = shareRease.hashCode();
+        HashSet<Integer> hashSet = new HashSet<>();
+        hashSet.add(1);
+        System.out.println("i1 = " + i1);
         new Thread(() -> {
 
             try {
