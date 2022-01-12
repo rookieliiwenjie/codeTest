@@ -5,13 +5,8 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/**
- * 在此填写类的用途、注意事项等
- *
- * @author rookie.li
- * @date 2021-10-18 14:31
- */
-public class ABCDemo {
+
+public class PrintAbcExam {
     public static Lock lock = new ReentrantLock();
     static AtomicInteger count = new AtomicInteger(1);
     static Condition aPrint = lock.newCondition();

@@ -49,4 +49,18 @@ public class StringSwapDemo {
         return sum == 0?9999:sum;
 
     }
+    //originalList : 源集合
+    // pageSize : 单页数量
+    // pageNumber : 指定的页数
+    public List getSubList(List originalList, int pageSize, int pageNumber){
+        if(originalList == null || originalList.isEmpty()){
+            return null;
+        }
+        //设置总页数
+        int len = originalList.size();
+        int start = (pageNumber - 1) * pageSize;
+        //对list进行截取
+        return originalList.subList(start,len-start>pageNumber?start+pageSize:len);
+    }
+
 }
