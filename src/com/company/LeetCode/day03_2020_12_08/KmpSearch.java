@@ -1,6 +1,5 @@
 package com.company.LeetCode.day03_2020_12_08;
 
-
 /**
  * @Author rookie.li
  * @create 2020/12/8
@@ -118,7 +117,6 @@ public class KmpSearch {
         if(str.length()<=0||par.length()<=0){
             return num;
         }
-        int strLenght = str.length();
         return num;
     }
     public static int[] getNext22(char[] p) {

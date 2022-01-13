@@ -1,0 +1,1547 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch FullDemo",
+            "request": "launch",
+            "mainClass": "com.company.bug.FullDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch AbaDemo",
+            "request": "launch",
+            "mainClass": "com.company.ABADemo.AbaDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch TwoBinDemo",
+            "request": "launch",
+            "mainClass": "com.company.Biner.TwoBinDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ABCBlock",
+            "request": "launch",
+            "mainClass": "com.company.BlockingQueueDemo.ABCBlock",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch AbcDemo",
+            "request": "launch",
+            "mainClass": "com.company.BlockingQueueDemo.AbcDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch BlockingQueueDemo",
+            "request": "launch",
+            "mainClass": "com.company.BlockingQueueDemo.BlockingQueueDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProduConsumer_TraditionDemo",
+            "request": "launch",
+            "mainClass": "com.company.BlockingQueueDemo.ProduConsumer_TraditionDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProduConsumer_TraditionDemo2",
+            "request": "launch",
+            "mainClass": "com.company.BlockingQueueDemo.ProduConsumer_TraditionDemo2",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Product",
+            "request": "launch",
+            "mainClass": "com.company.BlockingQueueDemo.Product",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProductAndConsmerDemo3",
+            "request": "launch",
+            "mainClass": "com.company.BlockingQueueDemo.ProductAndConsmerDemo3",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProductAndCuDemo",
+            "request": "launch",
+            "mainClass": "com.company.BlockingQueueDemo.ProductAndCuDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProductAndCuDemo2",
+            "request": "launch",
+            "mainClass": "com.company.BlockingQueueDemo.ProductAndCuDemo2",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch SynchronizedAndLockDemo",
+            "request": "launch",
+            "mainClass": "com.company.BlockingQueueDemo.SynchronizedAndLockDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch CasDemo",
+            "request": "launch",
+            "mainClass": "com.company.CASDemo.CasDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalanterThread",
+            "request": "launch",
+            "mainClass": "com.company.CalanterThread",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch CallableDemo",
+            "request": "launch",
+            "mainClass": "com.company.CallableDemo.CallableDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Caltroer",
+            "request": "launch",
+            "mainClass": "com.company.Caltroer",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClassDemo",
+            "request": "launch",
+            "mainClass": "com.company.ClassDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayListTimeDemo",
+            "request": "launch",
+            "mainClass": "com.company.ColleciontUnSafeDemo.ArrayListTimeDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayListUnsfeDemo",
+            "request": "launch",
+            "mainClass": "com.company.ColleciontUnSafeDemo.ArrayListUnsfeDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedListDemo",
+            "request": "launch",
+            "mainClass": "com.company.ColleciontUnSafeDemo.LinkedListDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MapUnsafe",
+            "request": "launch",
+            "mainClass": "com.company.ColleciontUnSafeDemo.MapUnsafe",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch SetUnsfeDemo",
+            "request": "launch",
+            "mainClass": "com.company.ColleciontUnSafeDemo.SetUnsfeDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MapDemo",
+            "request": "launch",
+            "mainClass": "com.company.CollectionS.MapDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayLiseDemo",
+            "request": "launch",
+            "mainClass": "com.company.CollentionDemo.ArrayLiseDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch CopyOnWriteArrayListDemo",
+            "request": "launch",
+            "mainClass": "com.company.CollentionDemo.CopyOnWriteArrayListDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashMapDemo",
+            "request": "launch",
+            "mainClass": "com.company.CollentionDemo.HashMapDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch AbcCountDownDemo",
+            "request": "launch",
+            "mainClass": "com.company.CountDownLatchDemo.AbcCountDownDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch CounntDownLatchDemo",
+            "request": "launch",
+            "mainClass": "com.company.CountDownLatchDemo.CounntDownLatchDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch CyclicBarrierDemo",
+            "request": "launch",
+            "mainClass": "com.company.CountDownLatchDemo.CyclicBarrierDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch SemaphoreDemo",
+            "request": "launch",
+            "mainClass": "com.company.CountDownLatchDemo.SemaphoreDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch FunctionUtil",
+            "request": "launch",
+            "mainClass": "com.company.DailyCode.FunctionUtil",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch DeadLockDemo",
+            "request": "launch",
+            "mainClass": "com.company.DeadLockDemo.DeadLockDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch FatoryMain",
+            "request": "launch",
+            "mainClass": "com.company.DemoFatory.FatoryMain",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ABCDemo",
+            "request": "launch",
+            "mainClass": "com.company.ExamCode.ABCDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ABCDemo2",
+            "request": "launch",
+            "mainClass": "com.company.ExamCode.ABCDemo2",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch AliExamFileDemo",
+            "request": "launch",
+            "mainClass": "com.company.ExamCode.AliExamFileDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch AliExamThreadPrint",
+            "request": "launch",
+            "mainClass": "com.company.ExamCode.AliExamThreadPrint",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExamDemo",
+            "request": "launch",
+            "mainClass": "com.company.ExamCode.ExamDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProduceAndConsumerDemo",
+            "request": "launch",
+            "mainClass": "com.company.ExamCode.ProduceAndConsumerDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExamDemo(1)",
+            "request": "launch",
+            "mainClass": "com.company.ExamDemo.ExamDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch FileZipDemo",
+            "request": "launch",
+            "mainClass": "com.company.IoDemo.FileZipDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObjectDemo",
+            "request": "launch",
+            "mainClass": "com.company.Java.ObjectDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashCodeDemo",
+            "request": "launch",
+            "mainClass": "com.company.JavaHashCode.HashCodeDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch HelloGc",
+            "request": "launch",
+            "mainClass": "com.company.JvmDemo.HelloGc",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch JvmDemo",
+            "request": "launch",
+            "mainClass": "com.company.JvmDemo.JvmDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch DequeFontDemo",
+            "request": "launch",
+            "mainClass": "com.company.LaoHan.DequeFontDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch FontDemo",
+            "request": "launch",
+            "mainClass": "com.company.LaoHan.FontDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch DailyTemperatures",
+            "request": "launch",
+            "mainClass": "com.company.LaoHan.LeetCodeTree.DailyTemperatures",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch HasPathSum",
+            "request": "launch",
+            "mainClass": "com.company.LaoHan.LeetCodeTree.HasPathSum",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxValueOffer",
+            "request": "launch",
+            "mainClass": "com.company.LaoHan.LeetCodeTree.MaxValueOffer",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Offer",
+            "request": "launch",
+            "mainClass": "com.company.LaoHan.LeetCodeTree.Offer",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch PreOrderTree",
+            "request": "launch",
+            "mainClass": "com.company.LaoHan.LeetCodeTree.PreOrderTree",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch SingListDemo",
+            "request": "launch",
+            "mainClass": "com.company.LaoHan.ListDemo.SingListDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Knapsack",
+            "request": "launch",
+            "mainClass": "com.company.LaoHan.dynamicProgramming.Knapsack",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch TreeDemo",
+            "request": "launch",
+            "mainClass": "com.company.LaoHan.treeDemo.TreeDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch AddBinary",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.AddBinary",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch AllCellDisOrder",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.AllCellDisOrder",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch FizzBuzz",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.ArrayDemo.FizzBuzz",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThirdMax",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.ArrayDemo.ThirdMax",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch TwoSum",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.ArrayDemo.TwoSum",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch CQueue",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.CQueue",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch CoinChange",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.CoinChange",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch DeleteNode",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.DeleteNode",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Demo",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.Demo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch DicesProbability",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.DicesProbability",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Divide",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.Divide",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fib",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.Fib",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindNumberIn2DArray",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.FindNumberIn2DArray",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch FristMissingProitvie",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.FristMissingProitvie",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch GetLeastNumbers",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.GetLeastNumbers",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch GetSum",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.GetSum",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch HammingWeight",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.HammingWeight",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch IsPowerOfThree",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.IsPowerOfThree",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch LadderLength",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.LadderLength",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch LevelOrderThree",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.LevelOrderThree",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Linked_List",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.Linked_List",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MajorityElement",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.MajorityElement",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxArea",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.MaxArea",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinStack",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.MinStack",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinSteps",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.MinSteps",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MonkeyDemo",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.MonkeyDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Nim",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.Nim",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch PlusOne",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.PlusOne",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrefixesDivBy5",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.PrefixesDivBy5",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseBits",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.ReverseBits",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReversePrint",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.ReversePrint",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch RevserLitst",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.RevserLitst",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountSegments",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.Strig.CountSegments",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseWords",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.Strig.ReverseWords",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch InorderTraversal",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.Tree.InorderTraversal",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Candy",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.day01.Candy",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch findContentChildren",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.day02.findContentChildren",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch KmpSearch",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.day03_2020_12_08.KmpSearch",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch CanPlaceFlowers",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.day04_2020_12_11_eraseOverlapIntervals.CanPlaceFlowers",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch EraseOverlapIntervals",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.day04_2020_12_11_eraseOverlapIntervals.EraseOverlapIntervals",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch PartiTionLabels",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.day05_2020_12_16.PartiTionLabels",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindMinArrowShots",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.day5_2020_12_14_findMinArrowShots.FindMinArrowShots",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxProfit",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.day5_2020_12_14_findMinArrowShots.MaxProfit",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch levelOrderOne",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.levelOrderOne",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch GetIntersectionNode",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.list.GetIntersectionNode",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch GetKthFromEnd",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.list.GetKthFromEnd",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeTwoLists",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.list.MergeTwoLists",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch newWays",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.newWays",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch role",
+            "request": "launch",
+            "mainClass": "com.company.LeetCode.role",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch LocalDateTimeDemo",
+            "request": "launch",
+            "mainClass": "com.company.LocalDateTimeDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "com.company.Main",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Demo(1)",
+            "request": "launch",
+            "mainClass": "com.company.MyLockRecefreLock.Demo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyDemo",
+            "request": "launch",
+            "mainClass": "com.company.MyLockRecefreLock.MyDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch GcOverHeapLimitDemo",
+            "request": "launch",
+            "mainClass": "com.company.OOMDemo.GcOverHeapLimitDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch SoftRenfrenceDemo",
+            "request": "launch",
+            "mainClass": "com.company.RenfrenceDemo.SoftRenfrenceDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch StrongRenfrenceDemo",
+            "request": "launch",
+            "mainClass": "com.company.RenfrenceDemo.StrongRenfrenceDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch WeakReferceDemo",
+            "request": "launch",
+            "mainClass": "com.company.RenfrenceDemo.WeakReferceDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch WeakReferceQueue",
+            "request": "launch",
+            "mainClass": "com.company.RenfrenceDemo.WeakReferceQueue",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleDateFormateDemo",
+            "request": "launch",
+            "mainClass": "com.company.SimpleDateFormateDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch A",
+            "request": "launch",
+            "mainClass": "com.company.SingleonDemo.A",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringBufferAndStringBuider",
+            "request": "launch",
+            "mainClass": "com.company.StringBufferAndStringBuider",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringBufferDemo",
+            "request": "launch",
+            "mainClass": "com.company.StringBufferDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringDemo",
+            "request": "launch",
+            "mainClass": "com.company.Stringdemo.StringDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringStudy",
+            "request": "launch",
+            "mainClass": "com.company.Stringdemo.StringStudy",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestSimpleDateFormate",
+            "request": "launch",
+            "mainClass": "com.company.TestSimpleDateFormate",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ABCDEmo",
+            "request": "launch",
+            "mainClass": "com.company.Thread.ABCDEmo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch RunableDemo",
+            "request": "launch",
+            "mainClass": "com.company.Thread.RunableDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadDemo",
+            "request": "launch",
+            "mainClass": "com.company.Thread.ThreadDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadTicket",
+            "request": "launch",
+            "mainClass": "com.company.Thread.ThreadTicket",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Waner",
+            "request": "launch",
+            "mainClass": "com.company.Thread.Waner",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ABC_Condition",
+            "request": "launch",
+            "mainClass": "com.company.ThreadDemo.ABC_Condition",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch VolatitleDemo",
+            "request": "launch",
+            "mainClass": "com.company.ThreadDemo.day01_2020_12_7.VolatitleDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadLocalDemo",
+            "request": "launch",
+            "mainClass": "com.company.ThreadDemo.day02_2020_12_08.ThreadLocalDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadLocalOomDemo",
+            "request": "launch",
+            "mainClass": "com.company.ThreadDemo.day03_2020_12_10.ThreadLocalOomDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedTransferDemo",
+            "request": "launch",
+            "mainClass": "com.company.ThreadDemo.day04_2020_12_15_volatile.LinkedTransferDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch VolatileDemo",
+            "request": "launch",
+            "mainClass": "com.company.ThreadDemo.day04_2020_12_15_volatile.VolatileDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MainDemo",
+            "request": "launch",
+            "mainClass": "com.company.ThreadDemo.day05_2020_12_22synzied.MainDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadPoolDemo",
+            "request": "launch",
+            "mainClass": "com.company.ThreadPoolDemo.ThreadPoolDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch AbcDemo(1)",
+            "request": "launch",
+            "mainClass": "com.company.UnFairAndFairDemo.AbcDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch AbcSynchronizedDemo",
+            "request": "launch",
+            "mainClass": "com.company.UnFairAndFairDemo.AbcSynchronizedDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadOrWriteLock",
+            "request": "launch",
+            "mainClass": "com.company.UnFairAndFairDemo.ReadOrWriteLock",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReentrantLockDemo",
+            "request": "launch",
+            "mainClass": "com.company.UnFairAndFairDemo.ReentrantLockDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch SpinLockDemo",
+            "request": "launch",
+            "mainClass": "com.company.UnFairAndFairDemo.SpinLockDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch UnFairAndFairDemo",
+            "request": "launch",
+            "mainClass": "com.company.UnFairAndFairDemo.UnFairAndFairDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch springUrlBug",
+            "request": "launch",
+            "mainClass": "com.company.bug.springUrlBug",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch AtomicIntegerDemo",
+            "request": "launch",
+            "mainClass": "com.company.dem.AtomicIntegerDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Badshililock",
+            "request": "launch",
+            "mainClass": "com.company.dem.Badshililock",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch JoinDemo",
+            "request": "launch",
+            "mainClass": "com.company.dem.JoinDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lunar",
+            "request": "launch",
+            "mainClass": "com.company.dem.Lunar",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyClass",
+            "request": "launch",
+            "mainClass": "com.company.dem.MyClass",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyRunnable",
+            "request": "launch",
+            "mainClass": "com.company.dem.MyRunnable",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrionityDemo",
+            "request": "launch",
+            "mainClass": "com.company.dem.PrionityDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringRevser",
+            "request": "launch",
+            "mainClass": "com.company.dem.StringRevser",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch WaitDemo",
+            "request": "launch",
+            "mainClass": "com.company.dem.WaitDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch demo",
+            "request": "launch",
+            "mainClass": "com.company.dem.demo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch demoData",
+            "request": "launch",
+            "mainClass": "com.company.dem.demoData",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch shilijiasuodemo",
+            "request": "launch",
+            "mainClass": "com.company.dem.shilijiasuodemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch urlDemo",
+            "request": "launch",
+            "mainClass": "com.company.dem.urlDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch DefaultDemo",
+            "request": "launch",
+            "mainClass": "com.company.javaEigt.Default.DefaultDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(1)",
+            "request": "launch",
+            "mainClass": "com.company.javaEigt.Maohao.Main",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortDemo",
+            "request": "launch",
+            "mainClass": "com.company.javaEigt.SortDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestRetry",
+            "request": "launch",
+            "mainClass": "com.company.javaEigt.TestRetry.TestRetry",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch demo1",
+            "request": "launch",
+            "mainClass": "com.company.javaEigt.fanshe.demo1",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch fanwei",
+            "request": "launch",
+            "mainClass": "com.company.javaEigt.fanwei",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch CreateClassDemo",
+            "request": "launch",
+            "mainClass": "com.company.javajichu.CreateClassDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch RuntimeHookThreadDemo",
+            "request": "launch",
+            "mainClass": "com.company.rocketMqDemo.RuntimeHookThreadDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadDemoRocketMq",
+            "request": "launch",
+            "mainClass": "com.company.rocketMqDemo.ThreadDemoRocketMq",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadLocalIndex",
+            "request": "launch",
+            "mainClass": "com.company.rocketMqDemo.ThreadLocalIndex",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(2)",
+            "request": "launch",
+            "mainClass": "com.company.shejimoshi.AbstrabeFactory.Main",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(3)",
+            "request": "launch",
+            "mainClass": "com.company.shejimoshi.BuilderDemo.Main",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch FatoryMain(1)",
+            "request": "launch",
+            "mainClass": "com.company.shejimoshi.DemoFatory.FatoryMain",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(4)",
+            "request": "launch",
+            "mainClass": "com.company.shejimoshi.Main",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProxyDemo",
+            "request": "launch",
+            "mainClass": "com.company.shejimoshi.ProxyDemo.ProxyDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(5)",
+            "request": "launch",
+            "mainClass": "com.company.shejimoshi.StategyPattern.Main",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(6)",
+            "request": "launch",
+            "mainClass": "com.company.shejimoshi.observe.observeOne.Main",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(7)",
+            "request": "launch",
+            "mainClass": "com.company.shejimoshi.templetepattern.Main",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch JvmDemo(1)",
+            "request": "launch",
+            "mainClass": "com.company.vmJ.JvmDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch VolatitleDemo(1)",
+            "request": "launch",
+            "mainClass": "com.company.volatitleDemo.VolatitleDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayTimeCompare",
+            "request": "launch",
+            "mainClass": "com.company.zhinengnet.ArrayTimeCompare",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringBuilderAndString",
+            "request": "launch",
+            "mainClass": "com.company.zhinengnet.StringBuilderAndString",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReflectUtil",
+            "request": "launch",
+            "mainClass": "com.company.反射demo.ReflectUtil",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ABC_Condition(1)",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.ABC_Condition",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadUtil",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.ThreadUtil",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArraylistDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day04_2020_12_15_volatile.ArraylistDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedTransferDemo(1)",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day04_2020_12_15_volatile.LinkedTransferDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch VolatileDemo(1)",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day04_2020_12_15_volatile.VolatileDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main2Demo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day05_2020_12_22synzied.Main2Demo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MainDemo(1)",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day05_2020_12_22synzied.MainDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch AtomicIntegerFieldUpdaterDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day06_2021__1_6_atomic.AtomicIntegerFieldUpdaterDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadAndWriteExample",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day07_2021_01_20.ReadAndWriteExample",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(8)",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day08.Main",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch LockDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day09_2021_2_18_3_5LOCK.LockDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(9)",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day09_2021_2_18_3_5LOCK.Main",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReecenrLock",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day09_2021_2_18_3_5LOCK.ReecenrLock",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadJoinDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day09_2021_2_18_3_5LOCK.ThreadJoinDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch MxBeanThread",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day11_2021_02_24_thread.MxBeanThread",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch PriorityDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day11_2021_02_24_thread.PriorityDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadPriorityDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day11_2021_02_24_thread.ThreadPriorityDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch CdDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day12_2021_02_25_THREAD.CdDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountThread",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day12_2021_02_25_THREAD.CountThread",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch DeamonDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day12_2021_02_25_THREAD.DeamonDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Interrupted",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day12_2021_02_25_THREAD.Interrupted",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch SyDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day12_2021_02_25_THREAD.SyDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadStateDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day12_2021_02_25_THREAD.ThreadStateDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch WaitOrNotifyDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day14_2021_03_01.WaitOrNotifyDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch EncodeDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day15_2021_03_02.EncodeDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Join",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day15_2021_03_02.Join",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch JoinDemo(1)",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day15_2021_03_02.JoinDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch TimeUtils",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day15_2021_03_02.TimeUtils",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch WiatDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day15_2021_03_02.WiatDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch demo(1)",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day15_2021_03_02.demo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Demo(2)",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day16_2021_03_03.Demo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Demo(3)",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day17_2021_03_04.Demo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch CyclicBarrierTest3",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day19_2021_03_17.CyclicBarrierTest3",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Demo(4)",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day19_2021_03_17.Demo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadSleepDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day19_2021_03_17.ThreadSleepDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch Demo(5)",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day20_2021_04_16.Demo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReentrantLockDemo(1)",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day20_2021_04_16.ReentrantLockDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadAndWriteLockDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day21_2021_04_20.ReadAndWriteLockDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch LockSupportDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day22_04_26.LockSupportDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch BoundedQueue",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day_23_04_27_Contion.BoundedQueue",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConditionDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day_23_04_27_Contion.ConditionDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObjeceDemo",
+            "request": "launch",
+            "mainClass": "com.company.并发编程.day_23_04_27_Contion.ObjeceDemo",
+            "projectName": "codeTest_1b61ca28"
+        }
+    ]
+}

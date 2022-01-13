@@ -20,7 +20,9 @@ package com.company.LeetCode.ArrayDemo;
  * @date 2021-10-08 22:02
  */
 public class Exchange {
-
+    public static void main(String args[]){
+        System.out.println("测试");
+    }
     public int[] exchange(int[] nums) {
         int newNums[] = new int[nums.length];
         int right = nums.length - 1;

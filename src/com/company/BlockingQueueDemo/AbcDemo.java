@@ -2,7 +2,6 @@ package com.company.BlockingQueueDemo;
 
 import java.util.HashSet;
 import java.util.concurrent.Semaphore;
-import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
@@ -65,7 +64,7 @@ public class AbcDemo {
         HashSet<Integer> hashSet = new HashSet<>();
         hashSet.add(1);
         System.out.println("i1 = " + i1);
-        /*new Thread(() -> {
+        new Thread(() -> {
 
             try {
                 for (int i = 0; i < 10; i++) {
@@ -94,7 +93,7 @@ public class AbcDemo {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }).start();*/
+        }).start();
     }
 }
 
