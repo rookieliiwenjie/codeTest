@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch IntegerDemo",
+            "request": "launch",
+            "mainClass": "com.company.bug.IntegerDemo",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
             "name": "Launch FullDemo",
             "request": "launch",
             "mainClass": "com.company.bug.FullDemo",
