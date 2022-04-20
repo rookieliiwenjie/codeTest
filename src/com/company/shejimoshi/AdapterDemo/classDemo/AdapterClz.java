@@ -5,5 +5,9 @@ package com.company.shejimoshi.AdapterDemo.classDemo;
  * @Date: 2022/4/20 5:04 下午
  * @Description:
  */
-public class AdapterClz {
+public class AdapterClz extends Adaptee implements Target {
+    @Override
+    public void request() {
+        specital();
+    }
 }

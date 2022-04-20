@@ -7,4 +7,6 @@ package com.company.shejimoshi.AdapterDemo.classDemo;
  */
 public interface Target {
 
+    public void request();
+
 }
