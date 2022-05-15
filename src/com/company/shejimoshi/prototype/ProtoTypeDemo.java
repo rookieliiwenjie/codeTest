@@ -8,16 +8,18 @@ package com.company.shejimoshi.prototype;
 public class ProtoTypeDemo {
     public static void main(String[] args) {
         CloneDemo cloneDemo = new CloneDemo();
+        cloneDemo.setAge(1);
         System.out.println("cloneDemo = " + cloneDemo);
+        CloneDemo clone = null;
         try {
-            CloneDemo clone = (CloneDemo) cloneDemo.clone();
+            clone = (CloneDemo) cloneDemo.clone();
             clone.setName("liwenjie");
             System.out.println("clone = " + clone);
-
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
-        cloneDemo.setAge(1);
+        cloneDemo.setName("12323");
         System.out.println("cloneDemo = " + cloneDemo);
+        System.out.println("clone = " + clone);
     }
 }
