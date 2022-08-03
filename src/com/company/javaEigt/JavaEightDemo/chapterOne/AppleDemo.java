@@ -28,7 +28,7 @@ public class AppleDemo {
         System.out.println("apples1.toString() = " + apples1.toString());
         //匿名函数写法
         List<Apple> apples2 = filterApples(apples, (Apple a) -> a.getColor().equals("green"));
-        List<Apple> green = apples.stream().filter(apple1 -> apple.getColor().equals("green")).collect(Collectors.toList());
+        apples.stream().filter(apple1 -> apple.getColor().equals("green")).collect(Collectors.toList());
     }
 
     /**
