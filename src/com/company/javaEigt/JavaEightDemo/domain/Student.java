@@ -1,4 +1,4 @@
-package com.company.ThreadPoolDemo.domain;
+package com.company.javaEigt.JavaEightDemo.domain;
 
 /**
  * @Author: wenjie.li
