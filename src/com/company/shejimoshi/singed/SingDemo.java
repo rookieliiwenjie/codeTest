@@ -5,8 +5,12 @@ package com.company.shejimoshi.singed;
  * @create 2020/11/3
  */
 public class SingDemo {
-    private static SingDemo singDemo;
+    //volatile保证可见性
+    private static volatile SingDemo singDemo = null;
+    //
+    private SingDemo(){
 
+    }
     public static SingDemo getInstance() {
         if (singDemo == null) {
             synchronized (SingDemo.class) {
