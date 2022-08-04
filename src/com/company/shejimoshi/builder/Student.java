@@ -15,6 +15,14 @@ public class Student {
         return schoolName;
     }
 
+    public Student(String schoolName, String grade) {
+        this.schoolName = schoolName;
+        this.grade = grade;
+    }
+
+    public Student() {
+    }
+
     public void setSchoolName(String schoolName) {
         this.schoolName = schoolName;
     }

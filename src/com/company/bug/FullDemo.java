@@ -1,6 +1,8 @@
 package com.company.bug;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class FullDemo {
     public static void main(String args[]) {
@@ -9,6 +11,7 @@ public class FullDemo {
         sutdents.add(student);
         student.setAget(11);
         student.setName("name");
+        sutdents.sort(Collections.reverseOrder());
         System.out.println(sutdents.get(0).toString());
         
     }
