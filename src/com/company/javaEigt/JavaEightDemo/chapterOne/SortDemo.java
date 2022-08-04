@@ -17,7 +17,11 @@ public class SortDemo {
         System.out.println("transactions = " + transactions);
        // transactions.sort(Comparator.comparing(Transaction::getPrice));
         System.out.println("transactions after = " + transactions);
-        //transactions.sort(Comparator.reverseOrder());
+        /**
+         * 如果想使用Comparrator.reverseOrder()
+         * 对应实体类需要实现implements Comparable<T> 接口 同时实现对应方法compareTo
+         */
+        // transactions.sort(Comparator.reverseOrder());
         System.out.println("transactions reversedafter = " + transactions);
         transactions.sort(Comparator.comparing(Transaction::getPrice).reversed());
         System.out.println("transactions reversedafter = " + transactions);
