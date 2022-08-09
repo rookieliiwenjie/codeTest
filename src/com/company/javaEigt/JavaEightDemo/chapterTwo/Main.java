@@ -25,6 +25,8 @@ public class Main {
 
         List<Apple> apples1 = filterApple(new AppleWeightPredicate(), apples);
         System.out.println("apples1 = " + apples1);
+        String print = printApple(new ApplePrintAllFormatter(), apples);
+        System.out.println( print);
     }
 
     public static List<Apple> filterApple(ApplePredicate applePredicate, List<Apple> apples) {
@@ -35,5 +37,14 @@ public class Main {
             }
         }
         return apples1;
+    }
+
+
+    public static String printApple(AppleFormatter appleFormatter, List<Apple> apples) {
+        StringBuilder desc = new StringBuilder();
+        for (Apple apple : apples) {
+            desc.append(appleFormatter.print(apple)).append("\n");
+        }
+        return desc.toString();
     }
 }
