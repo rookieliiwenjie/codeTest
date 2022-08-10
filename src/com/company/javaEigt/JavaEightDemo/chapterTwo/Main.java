@@ -26,7 +26,14 @@ public class Main {
         List<Apple> apples1 = filterApple(new AppleWeightPredicate(), apples);
         System.out.println("apples1 = " + apples1);
         String print = printApple(new ApplePrintAllFormatter(), apples);
-        System.out.println( print);
+        System.out.println(print);
+        List<Apple> apples2 = filterApple(new ApplePredicate() {
+            @Override
+            public boolean compare(Apple apple) {
+                return "red".equals(apple.getColor());
+            }
+        }, apples);
+        System.out.println("apples2 = " + apples2);
     }
 
     public static List<Apple> filterApple(ApplePredicate applePredicate, List<Apple> apples) {
