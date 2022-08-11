@@ -34,6 +34,15 @@ public class Main {
             }
         }, apples);
         System.out.println("apples2 = " + apples2);
+
+
+
+        //Runnable demo java eight
+        Thread thread = new Thread(()->{
+            System.out.println("runa");
+        });
+        thread.start();
+        System.out.println("thread = " + thread.getName());
     }
 
     public static List<Apple> filterApple(ApplePredicate applePredicate, List<Apple> apples) {
