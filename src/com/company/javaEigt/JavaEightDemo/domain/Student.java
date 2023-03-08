@@ -35,7 +35,7 @@ public class Student implements Comparable<Student> {
 
     public static List<Student> getStudentList() {
         Student s1 = new Student("Ram", 18);
-        Student s2 = new Student("Shyam", 22);
+        Student s2 = new Student("Ram", 22);
         Student s3 = new Student("Mohan", 19);
         Student s4 = new Student("Mahesh", 20);
         Student s5 = new Student("Krishna", 21);

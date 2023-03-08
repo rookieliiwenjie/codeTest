@@ -76,18 +76,22 @@ public class AbcCountDownDemo {
             C.start();
             C.join();
         }*/
-        Object a = new Object();
-        Object b = new Object();
-        Object c = new Object();
-        ThreadDemo threadProA = new ThreadDemo("A", c, a);
-        ThreadDemo threadProB = new ThreadDemo("B", a, b);
-        ThreadDemo threadProC = new ThreadDemo("C", b, c);
-        new Thread(threadProA).start();
-        Thread.sleep(10);
-        new Thread(threadProB).start();
-        Thread.sleep(10);
-        new Thread(threadProC).start();
-        Thread.sleep(10);
+//        Object a = new Object();
+//        Object b = new Object();
+//        Object c = new Object();
+//        ThreadDemo threadProA = new ThreadDemo("A", c, a);
+//        ThreadDemo threadProB = new ThreadDemo("B", a, b);
+//        ThreadDemo threadProC = new ThreadDemo("C", b, c);
+//        new Thread(threadProA).start();
+//        Thread.sleep(10);
+//        new Thread(threadProB).start();
+//        Thread.sleep(10);
+//        new Thread(threadProC).start();
+//        Thread.sleep(10);
+        System.out.println("28%3 = " + 30%3);
+        System.out.println("28%3 = " + 29%3);
+        System.out.println("28%3 = " + 28%3);
+        System.out.println("28%3 = " + 27%3);
 
     }
 }

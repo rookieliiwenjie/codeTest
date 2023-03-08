@@ -2,9 +2,7 @@ package com.company.CountDownLatchDemo;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.Semaphore;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
  * Created by lwj32 on 2020/5/26.
@@ -16,7 +14,42 @@ public class SemaphoreDemo {
 
 
     public static void main(String[] args) {
-        Semaphore semaphore = new Semaphore(3);
+        Semaphore semaphore = new Semaphore(0);
+//        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(3, 3, 10, TimeUnit.SECONDS, new ArrayBlockingQueue<>(10));
+//        threadPoolExecutor.execute(() -> {
+//            try {
+//                semaphore.acquire();
+//                System.out.println("Thread.currentThread().getName() = " + Thread.currentThread().getName());
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            } finally {
+//                semaphore.release();
+//            }
+//        });
+//
+//        threadPoolExecutor.execute(() -> {
+//            try {
+//                semaphore.acquire();
+//                System.out.println("Thread.currentThread().getName() = " + Thread.currentThread().getName());
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            } finally {
+//                semaphore.release();
+//            }
+//        });
+//
+//        threadPoolExecutor.execute(() -> {
+//            try {
+//                semaphore.acquire();
+//                System.out.println("Thread.currentThread().getName() = " + Thread.currentThread().getName());
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            } finally {
+//                semaphore.release();
+//            }
+//        });
+//        threadPoolExecutor.shutdown();
+
         for (int i = 0; i < 7; i++) {
             new Thread(() -> {
                 try {
@@ -24,7 +57,7 @@ public class SemaphoreDemo {
                     System.out.println(Thread.currentThread().getName() + "\t入库");
                     System.out.println(Thread.currentThread().getName() + "\t停车2秒");
                     TimeUnit.SECONDS.sleep(2);
-
+                    System.out.println(Thread.currentThread().getName() + "第一次结束");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {

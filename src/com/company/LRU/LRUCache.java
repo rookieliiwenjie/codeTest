@@ -26,16 +26,10 @@ public class LRUCache<K, V> extends LinkedHashMap<K, V> {
         for (int i = 0; i < 30; i++) {
             linkedHashMap.put(i, i);
         }
-
         Iterator<Map.Entry<Integer, Integer>> entries = linkedHashMap.entrySet().iterator();
-
         while (entries.hasNext()) {
-
             Map.Entry<Integer, Integer> entry = entries.next();
-
             System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
-
-
         }
     }
 }

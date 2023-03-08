@@ -138,7 +138,7 @@ public class ArrayListUnsfeDemo {
                 arrayList.add(UUID.randomUUID().toString().substring(0, 8));
             }
 
-        }).start();
+        }).run();
         new Thread(() -> {
             for (int i = 0; i < 100; i++) {
 

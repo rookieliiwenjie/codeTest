@@ -20,12 +20,12 @@ public class MapUnsafe {
         }
         System.out.println("HashTable 消耗时间 \t" + (System.currentTimeMillis() - start));
         long startCo = System.currentTimeMillis();
-        Map<String, String> concurrentHashMap = new ConcurrentHashMap<>();
-        for (int i = 0; i < 10000; i++) {
-            new Thread(() -> {
-                concurrentHashMap.put(Thread.currentThread().getName(), UUID.randomUUID().toString());
-            }, String.valueOf(i)).start();
-        }
+//        Map<String, String> concurrentHashMap = new ConcurrentHashMap<>();
+//        for (int i = 0; i < 10000; i++) {
+//            new Thread(() -> {
+//                concurrentHashMap.put(Thread.currentThread().getName(), UUID.randomUUID().toString());
+//            }, String.valueOf(i)).start();
+//        }
         System.out.println("ConcurrentHashMap 消耗时间" + (System.currentTimeMillis() - startCo));
         /**
          * HashTable 消耗时间 	2305
