@@ -1,9 +1,6 @@
 package com.company.LeetCode;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * Created by lwj32 on 2020/5/16.
@@ -77,6 +74,23 @@ public class RevserLitst {
             return s;
         }
         return s.substring(n, s.length()) + s.substring(0, n);
+    }
+    public static String reverseLeftWords2(String s, int n) {
+        char[] chars = new char[s.length()];
+        int index =0;
+        for (int i = n; i < s.length(); i++) {
+               chars[index] =  s.charAt(i);
+               index++;
+        }
+        for (int i = n; i >= 0; i--) {
+            chars[s.length() - 1 - i] = s.charAt(i);
+        }
+        return String.valueOf(chars);
+    }
+    public static void main(String[] args) {
+       String  s = "abcdefg"; int k = 2;
+        System.out.println("k = " + reverseLeftWords2(s,k));
+
     }
 
     public class ListNode {
@@ -177,20 +191,7 @@ public class RevserLitst {
      *
      * @return
      */
-    public static void main(String[] args) {
-//        TreeNode root = new TreeNode(3);
-//        TreeNode rootLeft = new TreeNode(9);
-//        TreeNode rootRight = new TreeNode(20);
-//        root.left = rootLeft;
-//        root.right = rootRight;
-//        TreeNode rootRightLeft = new TreeNode(15);
-//        TreeNode rootRightRight = new TreeNode(7);
-//        rootRight.right = rootRightRight;
-//        rootRight.left = rootRightLeft;
-//        List<List<Integer>> list = levelOrder(root);
-//        System.out.println("list = " + list);
 
-    }
 
     public ListNode reverseListDiGui(ListNode head) {
 //        if (head == null) {
