@@ -14,7 +14,7 @@ import java.util.List;
  * 解题思路
  */
 public class LevelOrder {
-    public class TreeNode {
+    public static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -49,4 +49,37 @@ public class LevelOrder {
         return leverList;
     }
 
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        System.out.println("mirrorTree(root) = " + mirrorTree(root));
+    }
+    public static TreeNode  mirrorTree(TreeNode root){
+        return mirror(root);
+    }
+    public static TreeNode mirror(TreeNode root){
+        if (root==null) {
+           return null;
+        }
+        TreeNode left  = mirror(root.left);
+        TreeNode right  = mirror(root.right);
+        root.right = left;
+        root.left = right;
+        return root;
+    }
+
+    public static boolean isSymmetric(TreeNode root){
+        return symmetric(root,root);
+    }
+
+    public static boolean symmetric(TreeNode left,TreeNode right){
+      if(left==null && right==null){
+          return true;
+      }
+      if(left==null || right==null){
+        return false;
+      }
+      return  left.val == right.val && symmetric(left.left,right.right) && symmetric(left.right,right.left);
+    }
 }
