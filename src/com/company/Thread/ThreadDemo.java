@@ -13,17 +13,18 @@ public class ThreadDemo extends Thread {
             ThreadDemo A = new ThreadDemo();
             A.setName("A");
             A.start();
-            A.join();
+            //A.join();
             ThreadDemo B = new ThreadDemo();
             B.setName("B");
             B.start();
-            B.join();
+            //B.join();
             ThreadDemo C = new ThreadDemo();
             C.setName("C");
             C.start();
-            C.join();
+            //C.join();
 
         }
 
     }
+
 }
