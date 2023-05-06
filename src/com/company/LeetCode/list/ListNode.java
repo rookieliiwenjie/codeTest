@@ -7,8 +7,8 @@ package com.company.LeetCode.list;
  * @date 2021-09-27 11:19
  */
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
     public int getVal() {
         return val;
