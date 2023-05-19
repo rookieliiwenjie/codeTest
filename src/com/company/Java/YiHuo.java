@@ -33,27 +33,46 @@ public class YiHuo {
     public static void test3(int num, int num2) {
         int x = num ^ num2;
         System.out.println("按位异或 ^" + x);
+
+    }
+
+    public static int getOnceNumber(int arr[]) {
+        int number = 0;
+        for (int i : arr) {
+            System.out.println("before:i="+ i  +"number="+number);
+            number = number ^ i;
+            System.out.println("after:i="+ i  +"number="+number);
+        }
+        return number;
+
     }
 
     public static void main(String[] args) {
-        test1(1, 2);
-        test2(1, 2);
-        test3(1, 2);
-        test4(4, 1);
-        test5(21, 1);
-        test6(-10, 0);
-        System.out.println("args = " +  f(2,3));
+//        int arr [] = {4,1,2,3,5,2,1,3,5};
+//        char x = ('0' + 0);
+//        System.out.println("x = " + getOnceNumber(arr));
+//        System.out.println("(0^5) = " + (0 ^ 5));
+//        System.out.println("('0'+1) = " + x);
+        System.out.println("按位异或" + (100|1));
+//        test1(1, 2);
+//        test2(1, 2);
+//        test3(1, 2);
+//        test4(4, 1);
+//        test5(21, 1);
+//        test6(-10, 0);
+//        System.out.println("args = " +  f(2,3));
 
     }
 
     /**
      * xy 的平均值
+     *
      * @param x
      * @param y
      * @return
      */
-    static int f( int x,  int y ) {
-        return  (x +y )  >>  1 ;
+    static int f(int x, int y) {
+        return (x + y) >> 1;
     }
 
     /**
