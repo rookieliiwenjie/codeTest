@@ -37,7 +37,7 @@ public class InsertSort {
 
     public static void main(String[] args) {
         int arr[] = {3, 4, 7, 8, 9, 1, 2};
-        insertFuxi(arr);
+         insertTest(arr);
 
         System.out.println("arr = " + arr);
     }
@@ -53,5 +53,20 @@ public class InsertSort {
             }
         }
         System.out.println("arr = " + arr);
+    }
+
+
+    public static void insertTest(int arr[]) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            int k = i + 1;
+            while (k > 0) {
+                if (arr[k] < arr[k - 1]) {
+                    int temp = arr[k - 1];
+                    arr[k - 1] = arr[k];
+                    arr[k] = temp;
+                }
+                k--;
+            }
+        }
     }
 }

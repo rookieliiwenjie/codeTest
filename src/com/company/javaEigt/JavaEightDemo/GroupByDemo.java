@@ -28,9 +28,9 @@ public class GroupByDemo {
         Map<Object, ConcurrentMap<Boolean, Map<Integer, List<Menu>>>> collect = menus.stream().filter(menu -> menu.getHeat() != null)
                 .collect(groupingBy(dish -> {
                     if (dish.getHeat() <= 400) {
-                        return "gao";
+                        return "di";
                     } else if (dish.getHeat() <= 1000) {
-                        return "gao";
+                        return "zhong";
                     } else {
                         return "gao";
                     }

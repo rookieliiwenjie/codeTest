@@ -18,7 +18,118 @@ import java.util.concurrent.*;
  */
 //第四种获得使用java多线程的方式 线程池
 public class ThreadPoolDemo {
+
+
+    /**
+     * Creates a new {@code ThreadPoolExecutor} with the given initial
+     * parameters.
+     *
+     * @param corePoolSize the number of threads to keep in the pool, even
+     *        if they are idle, unless {@code allowCoreThreadTimeOut} is set
+     *        核心线程数，线程池中一直存在的线程数量，即使他们是空闲的，除非设置了allowCoreThreadTimeOut
+     * @param maximumPoolSize the maximum number of threads to allow in the
+     *        pool
+     *        最大线程数，线程池中最大的线程数量，当队列满了以后，启用最大线程数
+     * @param keepAliveTime when the number of threads is greater than
+     *        the core, this is the maximum time that excess idle threads
+     *        will wait for new tasks before terminating.
+     *        当线程数大于核心线程数时，这是多余的空闲线程在终止之前等待新任务的最长时间。
+     * @param unit the time unit for the {@code keepAliveTime} argument
+     *             keepAliveTime参数的时间单位
+     * @param workQueue the queue to use for holding tasks before they are
+     *        executed.  This queue will hold only the {@code Runnable}
+     *        tasks submitted by the {@code execute} method.
+     *         工作队列  在执行之前在任务执行之前，他排队用于保存任务。此队列将仅容纳由{@code execute}方法提交的{@code Runnable}任务 （这里不太准确，我使用submit 提交callback 也是可以放到队列的）。后面看到是因为  if (task == null) throw new NullPointerException();
+     *         RunnableFuture<T> ftask = newTaskFor(task);
+     *         execute(ftask);
+     *         return ftask;这个
+     * @param threadFactory the factory to use when the executor
+     *        creates a new thread
+     *        当执行程序创建新线程时要使用的工厂
+     * @param handler the handler to use when execution is blocked
+     *        because the thread bounds and queue capacities are reached
+     *        当执行由于达到线程边界和队列容量而被阻塞时要使用的处理程序
+     */
+
+    static final ThreadPoolExecutor executorService = new ThreadPoolExecutor(5, 10, 1, TimeUnit.SECONDS, new ArrayBlockingQueue<>(100), new ThreadFactryName("CompleteFutureDemo", false), new ThreadPoolExecutor.DiscardOldestPolicy());
     public static void main(String[] args) throws InterruptedException {
+        for (int i = 0; i < 20; i++) {
+            int finalI = i;
+            executorService.submit(() -> {
+                try {
+                    System.out.println(finalI +"--before" + Thread.currentThread().getName());
+                    TimeUnit.SECONDS.sleep(5);
+                    System.out.println(finalI +"--after" + Thread.currentThread().getName());
+                    TimeUnit.SECONDS.sleep(3);
+                    System.out.println(finalI +"----------after.after" + Thread.currentThread().getName());
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                return 1;
+            });
+        }
+        System.out.println("beforeexecutorService.getQueue().size()"+executorService.getQueue().size());
+        System.out.println("before sleep"+ executorService.getActiveCount());
+        TimeUnit.SECONDS.sleep(10);
+        System.out.println("after executorService.getQueue().size()"+executorService.getQueue().size());
+        System.out.println("after sleep"+ executorService.getActiveCount());
+        for (int i = 0; i < 20; i++) {
+            int finalI = i;
+            executorService.submit(() -> {
+                try {
+                    System.out.println("sencode"+finalI +"--before" + Thread.currentThread().getName());
+                    TimeUnit.SECONDS.sleep(5);
+                    System.out.println("sencode"+finalI +"--after" + Thread.currentThread().getName());
+                    TimeUnit.SECONDS.sleep(3);
+                    System.out.println("sencode"+finalI +"----------after.after" + Thread.currentThread().getName());
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                return finalI;
+            });
+        }
+
+
+
+
+//        for (int i = 0; i < 20; i++) {
+//            int finalI = i;
+//            executorService.execute(() -> {
+//                try {
+//                    System.out.println(finalI +"--before" + Thread.currentThread().getName());
+//                    TimeUnit.SECONDS.sleep(5);
+//                    System.out.println(finalI +"--after" + Thread.currentThread().getName());
+//                    TimeUnit.SECONDS.sleep(3);
+//                    System.out.println(finalI +"----------after.after" + Thread.currentThread().getName());
+//                } catch (InterruptedException e) {
+//                    throw new RuntimeException(e);
+//                }
+//            });
+//        }
+//        System.out.println("beforeexecutorService.getQueue().size()"+executorService.getQueue().size());
+//        System.out.println("before sleep"+ executorService.getActiveCount());
+//        TimeUnit.SECONDS.sleep(10);
+//        System.out.println("after executorService.getQueue().size()"+executorService.getQueue().size());
+//        System.out.println("after sleep"+ executorService.getActiveCount());
+//        for (int i = 0; i < 20; i++) {
+//            int finalI = i;
+//            executorService.submit(() -> {
+//                try {
+//                    System.out.println("sencode"+finalI +"--before" + Thread.currentThread().getName());
+//                    TimeUnit.SECONDS.sleep(5);
+//                    System.out.println("sencode"+finalI +"--after" + Thread.currentThread().getName());
+//                    TimeUnit.SECONDS.sleep(3);
+//                    System.out.println("sencode"+finalI +"----------after.after" + Thread.currentThread().getName());
+//                } catch (InterruptedException e) {
+//                    throw new RuntimeException(e);
+//                }
+//            });
+//        }
+
+
+
+
+
         // System.out.println("Runtime.getRuntime().availableProcessors() = " + Runtime.getRuntime().availableProcessors());
         /* ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor();*/
         /* ScheduledThreadPoolExecutor 时间调度*/
@@ -29,28 +140,28 @@ public class ThreadPoolDemo {
         ExecutorService executorService3 = Executors.newCachedThreadPool();//一池n线程
         ExecutorService executorService4 = Executors.newScheduledThreadPool(2);
         ExecutorService executorService5 = Executors.newWorkStealingPool(2);//一池n线程*/
-        ExecutorService executorService = new ThreadPoolExecutor(
-                3, 5, 1L, TimeUnit.SECONDS, new LinkedBlockingQueue<Runnable>(3)
-                , Executors.defaultThreadFactory(), new ThreadPoolExecutor.DiscardOldestPolicy());
-        long startTime = System.currentTimeMillis();
-        ExecutorService executorService4 = Executors.newScheduledThreadPool(2);
-        try {
-            for (int i = 0; i < 100; i++) {
-                executorService.execute(() -> {
-
-                    System.out.println(Thread.currentThread().getName() + "\t开始");
-                });
-            }
-        } catch (Exception e) {
-
-        } finally {
-            executorService.shutdown();
-
-        }
-
-
-
-        Runtime.getRuntime().availableProcessors();
+//        ExecutorService executorService = new ThreadPoolExecutor(
+//                3, 5, 1L, TimeUnit.SECONDS, new LinkedBlockingQueue<Runnable>(3)
+//                , Executors.defaultThreadFactory(), new ThreadPoolExecutor.DiscardOldestPolicy());
+//        long startTime = System.currentTimeMillis();
+//        ExecutorService executorService4 = Executors.newScheduledThreadPool(2);
+//        try {
+//            for (int i = 0; i < 100; i++) {
+//                executorService.execute(() -> {
+//
+//                    System.out.println(Thread.currentThread().getName() + "\t开始");
+//                });
+//            }
+//        } catch (Exception e) {
+//
+//        } finally {
+//            executorService.shutdown();
+//
+//        }
+//
+//
+//
+//        Runtime.getRuntime().availableProcessors();
        /* if(executorService.isShutdown()){
             System.out.println(Thread.currentThread().getName()+"Executor time is"+(System.currentTimeMillis()-startTime));
             // 消耗时间73

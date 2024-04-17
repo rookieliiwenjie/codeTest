@@ -2,6 +2,8 @@ package com.company.Java;
 
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
+//这种玩法高级哈
+import static com.company.Java.Demo.getNum2;
 
 /**
  * @Author: wenjie.li
@@ -26,8 +28,7 @@ public class FinalDemo {
 
     }
     public  void changeNum(){
-
-
+        getNum2();
 
     }
 
