@@ -51,7 +51,7 @@ public class findWinners {
     }
 
 
-    public List<List<Integer>> findWinners3(int[][] matches) {
+    public List<List<Integer>> findWinners2(int[][] matches) {
         Map<Integer, Integer> freq = new HashMap<Integer, Integer>();
         for (int[] match : matches) {
             int winner = match[0], loser = match[1];
