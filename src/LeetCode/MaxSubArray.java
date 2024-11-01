@@ -15,7 +15,7 @@ package LeetCode;
  * 提示：
  * 1 <=arr.length <= 10^5
  * -100 <= arr[i] <= 100
- * 链接：https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof
+ * @see https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof
  */
 public class MaxSubArray {
     public int maxSubArray(int[] nums) {
