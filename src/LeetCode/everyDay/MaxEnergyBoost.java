@@ -17,21 +17,21 @@ public class MaxEnergyBoost {
 
         long maxEnergy = 0L;
         int energyLenght = energyDrinkA.length;
-        // 0是a 如果是b就是1
         int flag = 0;
+        // 0是a 如果是b就是1
         int i = 0;
         while (i < energyLenght) {
             int mid = i + 1;
             int right = i + 2;
             if (right < energyLenght && mid < energyLenght) {
-                if (flag == 0 && (energyDrinkA[i] + energyDrinkA[mid]) < (energyDrinkA[i] + energyDrinkB[right])) {
-                    flag = 1;
+                if ((energyDrinkA[i] + energyDrinkA[mid] + energyDrinkA[right]) < (energyDrinkA[i]
+                        + energyDrinkB[right])) {
                     i = right;
                     maxEnergy += energyDrinkA[i] + energyDrinkB[right];
                     continue;
                 }
-                if (flag == 1 && (energyDrinkB[i] + energyDrinkB[mid]) < (energyDrinkB[i] + energyDrinkA[right])) {
-                    flag = 0;
+                if ((energyDrinkB[i] + energyDrinkB[mid] + energyDrinkB[right]) < (energyDrinkB[i]
+                        + energyDrinkA[right])) {
                     i = right;
                     maxEnergy += energyDrinkB[i] + energyDrinkA[right];
                     continue;

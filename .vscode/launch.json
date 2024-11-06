@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ResultsArray",
+            "request": "launch",
+            "mainClass": "LeetCode.everyDay.ResultsArray",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "LosingPlayer",
+            "request": "launch",
+            "mainClass": "LeetCode.everyDay.LosingPlayer",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
             "name": "JudgeSquareSum",
             "request": "launch",
             "mainClass": "LeetCode.everyDay.JudgeSquareSum",

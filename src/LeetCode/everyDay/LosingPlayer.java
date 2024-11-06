@@ -4,7 +4,7 @@ public class LosingPlayer {
     public static void main(String[] args) {
 
         LosingPlayer losingPlayer = new LosingPlayer();
-        String winner = losingPlayer.losingPlayer(2, 7);
+        String winner = losingPlayer.losingPlayer2(2, 7);
         System.out.println(winner);
     }
 
@@ -25,5 +25,10 @@ public class LosingPlayer {
         }
         int winner = (index % 2) == 1 ? 0 : 1;
         return userName[winner];
+    }
+
+    public String losingPlayer2(int x, int y) {
+        int min = Math.min(x, y / 4);
+        return (min % 2) == 1 ? "Alice" : "Bob";
     }
 }
