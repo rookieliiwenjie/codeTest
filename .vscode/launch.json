@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CountKConstraintSubstrings",
+            "request": "launch",
+            "mainClass": "LeetCode.everyDay.CountKConstraintSubstrings",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "MinChanges",
+            "request": "launch",
+            "mainClass": "LeetCode.everyDay.MinChanges",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "SingleNonDuplicate",
+            "request": "launch",
+            "mainClass": "LeetCode.everyDay.SingleNonDuplicate",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
             "name": "ResultsArray",
             "request": "launch",
             "mainClass": "LeetCode.everyDay.ResultsArray",
