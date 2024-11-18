@@ -1,4 +1,4 @@
-package com.dmall.dataengine.api.stock.view;
+package LeetCode.everyDay;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

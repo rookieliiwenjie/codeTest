@@ -1,4 +1,4 @@
-package com.dmall.ware.depotinventory.domain.common;
+package LeetCode.everyDay;
 import java.util.List;
 
 public class Page<T> {
