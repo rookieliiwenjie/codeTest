@@ -105,13 +105,14 @@ public class RemoveNthFromEnd {
 //        ListNode listNode = new ListNode(1);
 //        int n = 1;
         RemoveNthFromEnd removeNthFromEnd = new RemoveNthFromEnd();
-        ListNode listNode5 = removeNthFromEnd.removeNthFromEnd4(listNode, n);
+        ListNode listNode5 = removeNthFromEnd.removeNthFromEnd5(listNode, n);
     }
 
     /**
      * 双指针
      * 一个快一个慢 长度是n+1的长度
      * 当快的结束时，正好在删除节点的前一个节点。
+     *
      * @param head
      * @param n
      * @return
@@ -128,12 +129,6 @@ public class RemoveNthFromEnd {
             sencond = sencond.next;
         }
         sencond.next = sencond.next.next;
-        return dummy.next;
-    }
-    public ListNode removeNthFromEnd5(ListNode head, int n) {
-        ListNode dummy = new ListNode(-1, head);
-
-
         return dummy.next;
     }
 }
