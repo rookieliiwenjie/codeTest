@@ -22,24 +22,45 @@ public class DeleteDuplicates {
     }
 
     public static void main(String[] args) {
+//        ListNode head = new ListNode(1);
+//        ListNode head2 = new ListNode(2);
+//        head.next = head2;
+//        ListNode head3 = new ListNode(3);
+//        head2.next = head3;
+//        ListNode head4 = new ListNode(3);
+//        head3.next = head4;
+//        ListNode head5 = new ListNode(4);
+//        head4.next = head5;
+//        ListNode head6 = new ListNode(4);
+//        head5.next = head6;
+//        ListNode head7 = new ListNode(5);
+//        head6.next = head7;
+
         ListNode head = new ListNode(1);
-        ListNode head2 = new ListNode(2);
+        ListNode head2 = new ListNode(1);
         head.next = head2;
-        ListNode head3 = new ListNode(3);
+        ListNode head3 = new ListNode(1);
         head2.next = head3;
-        ListNode head4 = new ListNode(3);
-        head3.next = head4;
-        ListNode head5 = new ListNode(4);
-        head4.next = head5;
-        ListNode head6 = new ListNode(4);
-        head5.next = head6;
-        ListNode head7 = new ListNode(5);
-        head6.next = head7;
         DeleteDuplicates deleteDuplicates = new DeleteDuplicates();
-        ListNode listNode = deleteDuplicates.deleteDuplicates2(head);
+        ListNode listNode = deleteDuplicates.deleteDUlicates(head);
         System.out.println(listNode);
     }
 
+    public ListNode deleteDUlicates(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode dummy = new ListNode(-1, head);
+        ListNode res = head;
+        while (res.next != null) {
+            if (res.val == res.next.val) {
+                res.next = res.next.next;
+            } else {
+                res = res.next;
+            }
+        }
+        return dummy.next;
+    }
     public ListNode deleteDuplicates2(ListNode head) {
         Set<Integer> set = new HashSet<>();
         Set<Integer> newNode = new HashSet<>();
