@@ -12,19 +12,16 @@ public class Generate {
 
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> res = new ArrayList<>();
-        if (numRows >= 1) {
-            List<Integer> oneList = new ArrayList<>();
-            oneList.add(1);
-            res.add(oneList);
-        }
-        for (int i = 2; i <= numRows; i++) {
-            List<Integer> pre = res.get(i - 2);
+        for (int i = 0; i < numRows; i++) {
             List<Integer> cur = new ArrayList<>();
-            cur.add(1);
-            for (int j = 0; j < pre.size() - 1; j++) {
-                cur.add(pre.get(j) + pre.get(j + 1));
+            for (int j = 0; j <= i; j++) {
+                if (j == 0 || j == i) {
+                    cur.add(1);
+                } else {
+                    cur.add(res.get(i - 1).get(j - 1) + res.get(i - 1).get(j));
+
+                }
             }
-            cur.add(1);
             res.add(cur);
         }
         return res;
