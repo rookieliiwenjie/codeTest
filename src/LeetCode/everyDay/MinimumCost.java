@@ -78,6 +78,47 @@ public class MinimumCost {
         return res;
     }
 
+    public static void main(String[] args) {
+        MinimumCost minimumCost = new MinimumCost();
+        int m = 3, n = 2;
+        int[] horizontalCut = {1, 3};
+        int[] verticalCut = {5};
+        System.out.println(minimumCost.minimumCostPlus(m, n, horizontalCut, verticalCut));
+        System.out.println(minimumCost.minimumCost2(m, n, horizontalCut, verticalCut));
+    }
+    /**
+     * 困难版本
+     *
+     * @param m
+     * @param n
+     * @param horizontalCut
+     * @param verticalCut
+     * @return
+     */
+    public long minimumCostPlus(int m, int n, int[] horizontalCut, int[] verticalCut) {
+        long res = 0;
+        Arrays.sort(horizontalCut);
+        Arrays.sort(verticalCut);
+        int h = horizontalCut.length - 1;
+        int v = verticalCut.length - 1;
+        int hcount = 1;
+        int vcount = 1;
+        while (h >= 0 || v >= 0) {
+            //水平分割
+            if (v < 0 || (h >= 0 && horizontalCut[h] >= verticalCut[v])) {
+                res += (long) horizontalCut[h] * vcount;
+                hcount++;
+                h--;
+            } else {
+                res += (long) verticalCut[v] * hcount;
+                vcount++;
+                v--;
+            }
+        }
+        return res;
+    }
+
+
     /* @param m
      * @param n
      * @param horizontalCut 水平
@@ -92,15 +133,15 @@ public class MinimumCost {
         int v = verticalCut.length - 1;
         int hcount = 1;
         int vcount = 1;
-        while (h <= 0 && v <= 0) {
+        while (h >= 0 || v >= 0) {
             //水平分割
             if (v < 0 || (h >= 0 && horizontalCut[h] >= verticalCut[v])) {
-                res += horizontalCut[h] * hcount;
-                hcount++;
+                res += horizontalCut[h] * vcount;
+                vcount++;
                 h--;
             } else {
-                res += verticalCut[v] * vcount;
-                vcount++;
+                res += verticalCut[v] * hcount;
+                hcount++;
                 v--;
             }
         }
