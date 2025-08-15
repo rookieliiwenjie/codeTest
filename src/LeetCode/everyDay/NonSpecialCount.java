@@ -36,8 +36,19 @@ public class NonSpecialCount {
         return noSpecialCount;
     }
 
+    //埃氏筛
+    public int nonSpecialCount3(int l, int r) {
+        int n = (int) Math.sqrt(r);
+        int[] arr = new int[n];
+        int noSpecialCount = r - l + 1;
+        for (int i = 2; i <= n; i++) {
+            //gvty
+        }
+        return noSpecialCount;
+    }
+
     public int nonSpecialCount2(int l, int r) {
-        int noSpecialCount = 0;
+        int noSpecialCount = r - l + 1;
         for (int i = r; i <= r; i++) {
             int sum = 0;
             for (int j = 1; j < i; j++) {

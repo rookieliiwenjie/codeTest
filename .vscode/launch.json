@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IsPowerOfFour",
+            "request": "launch",
+            "mainClass": "LeetCode.everyDay.IsPowerOfFour",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "SortColors",
+            "request": "launch",
+            "mainClass": "LeetCode.QuestionAnwers.SortColors",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "CheckPowersOfThree",
+            "request": "launch",
+            "mainClass": "LeetCode.everyDay.CheckPowersOfThree",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "SemiOrderedPermutation",
+            "request": "launch",
+            "mainClass": "LeetCode.everyDay.SemiOrderedPermutation",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "SquareIsWhite",
+            "request": "launch",
+            "mainClass": "LeetCode.everyDay.SquareIsWhite",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "ClimbStairs",
+            "request": "launch",
+            "mainClass": "LeetCode.DP.ClimbStairs",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "CheckTwoChessboards",
+            "request": "launch",
+            "mainClass": "LeetCode.everyDay.CheckTwoChessboards",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
+            "name": "FinalPostitionOfSnake",
+            "request": "launch",
+            "mainClass": "LeetCode.everyDay.FinalPostitionOfSnake",
+            "projectName": "codeTest_1b61ca28"
+        },
+        {
+            "type": "java",
             "name": "CountKConstraintSubstrings",
             "request": "launch",
             "mainClass": "LeetCode.everyDay.CountKConstraintSubstrings",

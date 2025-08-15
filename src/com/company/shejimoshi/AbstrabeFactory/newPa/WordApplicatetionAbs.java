@@ -1,5 +1,7 @@
 package com.company.shejimoshi.AbstrabeFactory.newPa;
 
-public abstract class ApplicatetionAbs {
-    abstract void open();
+public  class WordApplicatetionAbs extends ApplicatetionAbs{
+     void open(){
+         System.out.println("open word");
+     }
 }

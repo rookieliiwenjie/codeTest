@@ -1,2 +1,5 @@
-package com.company.shejimoshi.ProxyDemo.newProxy;public interface Image {
+package com.company.shejimoshi.ProxyDemo.newProxy;
+
+public interface Image {
+    void look();
 }

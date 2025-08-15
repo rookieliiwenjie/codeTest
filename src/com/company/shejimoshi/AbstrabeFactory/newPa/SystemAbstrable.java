@@ -1,2 +1,5 @@
-package com.company.shejimoshi.AbstrabeFactory.newPa;public class SystemAbstrable {
+package com.company.shejimoshi.AbstrabeFactory.newPa;
+
+public abstract class SystemAbstrable {
+    abstract String create();
 }

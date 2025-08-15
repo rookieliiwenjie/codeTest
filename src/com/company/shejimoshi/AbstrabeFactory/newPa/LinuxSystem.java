@@ -1,8 +1,8 @@
 package com.company.shejimoshi.AbstrabeFactory.newPa;
 
-public class WindowSystem extends SystemAbstrable{
+public class LinuxSystem extends SystemAbstrable{
     @Override
     String create() {
-        return "window";
+        return "linux";
     }
 }

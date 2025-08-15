@@ -1,8 +1,8 @@
 package com.company.shejimoshi.FactoryDemo2025;
 
-public class ChannelStockFactory extends StockFactory{
+public class BCStockFactory extends StockFactory{
     @Override
     StockQuery createStock() {
-        return  new ChannelStockQuery();
+        return  new BCStockQuery();
     }
 }

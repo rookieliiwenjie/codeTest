@@ -1,24 +1,24 @@
 package com.company.shejimoshi.builder;
 
-public class BigHouse extends HouseBuilder{
+public class SmallHouse extends HouseBuilder{
 
     @Override
-    public String buildFoundation() {
-        return "build BigHouse Foundation";
+    public void buildFoundation() {
+        house.setFoundation("Small");
     }
 
     @Override
-    public String buildStructure() {
-        return "build BigHouse Foundation";
+    public void buildStructure() {
+        house.setStructure("Small");
     }
 
     @Override
-    public String buildRoof() {
-        return "build BigHouse Foundation";
+    public void buildRoof() {
+        house.setRoof("Small");
     }
 
     @Override
-    public String buildInterior() {
-        return "build BigHouse Foundation";
+    public void buildInterior() {
+        house.setInterior("Small");
     }
 }

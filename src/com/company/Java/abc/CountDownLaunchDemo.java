@@ -1,4 +1,4 @@
-package com.company.Java;
+package com.company.Java.abc;
 
 import LeetCode.Strig.Count;
 
@@ -21,6 +21,7 @@ public class CountDownLaunchDemo {
     }
 
     public static void setCountDownLatch() {
+        System.out.println("begin"+ countDownLatch.getCount());
         Thread thread = new Thread(() -> {
             try {
 

@@ -1,14 +1,14 @@
 package com.company.shejimoshi.BridgeDemo;
 
-public class SornTvDevice implements Device {
+public class XiaomiTvDevice implements Device {
 
     @Override
     public void turnOn() {
-        System.out.println("sorn");
+        System.out.println("xiaomi");
     }
 
     @Override
     public void adjustVolume() {
-        System.out.println("sorn");
+        System.out.println("xiaomi");
     }
 }

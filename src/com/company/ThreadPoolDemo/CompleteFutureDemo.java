@@ -12,40 +12,61 @@ public class CompleteFutureDemo {
     protected static final AtomicInteger mThreadNum = new AtomicInteger(1);
     static final ThreadPoolExecutor executorService = new ThreadPoolExecutor(5, 10, 1, TimeUnit.SECONDS, new ArrayBlockingQueue<>(10), new ThreadFactryName("CompleteFutureDemo", false), new ThreadPoolExecutor.DiscardOldestPolicy());
 
+    public static void main(String[] args) throws InterruptedException {
+        acceptEitherDemo();
+    }
+    public static void acceptEitherDemo() throws InterruptedException {
 
-    public static void acceptEitherDemo() {
-
-        CompletableFuture<Integer> future1 = CompletableFuture.supplyAsync(() -> 100, executorService);
-        CompletableFuture<Integer> future2 = CompletableFuture.supplyAsync(() -> 200, executorService);
-
-        future1.acceptEitherAsync(future2, (result) -> {
+        CompletableFuture<Integer> future1 = CompletableFuture.supplyAsync(() -> {
             try {
-                System.out.println("acceptEitherAsync" + (result + future2.get()));
-            } catch (InterruptedException | ExecutionException e) {
+                TimeUnit.SECONDS.sleep(2);
+                System.out.println("线程执行完成");
+            } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
+            return 100;
         });
-        System.out.println(future1.join());
-        //接收一个CompletionStage
-//        future1.acceptEither(future2, (result) -> {
-//            try {
-//                System.out.println(result + future2.get());
-//            } catch (InterruptedException | ExecutionException e) {
-//                throw new RuntimeException(e);
-//            }
-//        });
-//        //如果不想影响当前线程，可以使用异步的方式，这样就不会阻塞当前线程
-//        //accept 接收 Either 任务和 Async 异步
+
+        System.out.println("执行其他的");
+        TimeUnit.SECONDS.sleep(1);
+        System.out.println("执行完的");
+        Integer integer = null;
+        try {
+            integer = future1.get();
+        } catch (ExecutionException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("in"+integer);
+//        CompletableFuture<Integer> future2 = CompletableFuture.supplyAsync(() -> 200, executorService);
+//
 //        future1.acceptEitherAsync(future2, (result) -> {
 //            try {
 //                System.out.println("acceptEitherAsync" + (result + future2.get()));
-//                TimeUnit.SECONDS.sleep(2);
-//                System.out.println("acceptEitherAsync" + new Date());
 //            } catch (InterruptedException | ExecutionException e) {
 //                throw new RuntimeException(e);
 //            }
 //        });
-        System.out.println("main" + new Date());
+//        System.out.println(future1.join());
+//        //接收一个CompletionStage
+////        future1.acceptEither(future2, (result) -> {
+////            try {
+////                System.out.println(result + future2.get());
+////            } catch (InterruptedException | ExecutionException e) {
+////                throw new RuntimeException(e);
+////            }
+////        });
+////        //如果不想影响当前线程，可以使用异步的方式，这样就不会阻塞当前线程
+////        //accept 接收 Either 任务和 Async 异步
+////        future1.acceptEitherAsync(future2, (result) -> {
+////            try {
+////                System.out.println("acceptEitherAsync" + (result + future2.get()));
+////                TimeUnit.SECONDS.sleep(2);
+////                System.out.println("acceptEitherAsync" + new Date());
+////            } catch (InterruptedException | ExecutionException e) {
+////                throw new RuntimeException(e);
+////            }
+////        });
+//        System.out.println("main" + new Date());
 
     }
 
@@ -340,34 +361,34 @@ public class CompleteFutureDemo {
     }
 
 
-    public static void main(String[] args) throws ExecutionException, InterruptedException {
-        /**
-         thenAcceptAsync ：异步执行一个任务，接收一个参数 无返回值
-         */
-        //  acceptEitherDemo();
-        /**
-         * 带有返回值的 两个任务处理
-         */
-        // applyEitherDemo();
-
-
-        //分别执行统一处理
-        //allOfAnyOfDemo();
-
-
-        //取消任务 cancelDemo();
-
-
-        //completeGetJoinDemo();
-
-        //用于处理异步操作的解惑或者异常结果
-        // handleDemo();
-        //isXXDemo();
-        //  obtrudeXXXDemo();
-        //runXXXDemo();
-        // thenXXXDemo();
-        whenXXXDemo();
-    }
+//    public static void main(String[] args) throws ExecutionException, InterruptedException {
+//        /**
+//         thenAcceptAsync ：异步执行一个任务，接收一个参数 无返回值
+//         */
+//        //  acceptEitherDemo();
+//        /**
+//         * 带有返回值的 两个任务处理
+//         */
+//        // applyEitherDemo();
+//
+//
+//        //分别执行统一处理
+//        //allOfAnyOfDemo();
+//
+//
+//        //取消任务 cancelDemo();
+//
+//
+//        //completeGetJoinDemo();
+//
+//        //用于处理异步操作的解惑或者异常结果
+//        // handleDemo();
+//        //isXXDemo();
+//        //  obtrudeXXXDemo();
+//        //runXXXDemo();
+//        // thenXXXDemo();
+//        whenXXXDemo();
+//    }
 
     public static void whenXXXDemo() {
         CompletableFuture<Integer> completableFuture = CompletableFuture.supplyAsync(() -> {

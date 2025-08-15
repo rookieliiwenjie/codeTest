@@ -50,6 +50,15 @@ public class MaxSpending {
      * 重复一共 m×n 次操作即可，时间复杂度降低至 O(mnlogm)。
      *
      */
+    //因为是已经排序过的啦，所以可以直接维护 最后一列的值
+
+    /**
+     * maxSpending 的时间复杂度是 (O(m \cdot n \log(m \cdot n)))，
+     * 因为它对数组中的所有元素进行排序。  maxSpending2 的时间复杂度是 (O(m \cdot n \log m))，
+     * 因为它使用优先队列（小根堆）来合并已排序的列表，这种方法更高效。
+     * @param values
+     * @return
+     */
     public long maxSpending2(int[][] values) {
         int m = values.length, n = values[0].length;
         PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a[0]));

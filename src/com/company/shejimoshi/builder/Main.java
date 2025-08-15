@@ -7,6 +7,9 @@ package com.company.shejimoshi.builder;
  */
 public class Main {
     public static void main(String[] args) {
-
+        HouseBuilder bigHouse = new BigHouse();
+        Director director = new Director(bigHouse);
+        House house = director.constructHouse();
+        System.out.println(house);
     }
 }

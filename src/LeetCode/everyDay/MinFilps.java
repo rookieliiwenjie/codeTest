@@ -83,7 +83,7 @@ public class MinFilps {
             }
         }
         if (sumNum % 2 != 0) {
-            
+
         }
         return Math.min(hangCount, leiCount);
     }

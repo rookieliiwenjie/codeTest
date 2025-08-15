@@ -1,2 +1,5 @@
-package com.company.shejimoshi.AbstrabeFactory.newPa;public class ApplicatetionAbs {
+package com.company.shejimoshi.AbstrabeFactory.newPa;
+
+public abstract class ApplicatetionAbs {
+    abstract void open();
 }

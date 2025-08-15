@@ -1,2 +1,13 @@
-package com.company.shejimoshi.FactoryDemo2025;public interface StockFactory {
+package com.company.shejimoshi.FactoryDemo2025;
+
+/**
+ * 工厂方法模式提供了一个创建对象的接口，但是将具体的对象创建延迟到子类中。这样，客户端代码不需要知道要创建的具体对象的类，
+ * 只需要通过工厂方法来创建对象。这使得客户端代码与具体对象的创建解耦，提高了代码的灵活性和可维护性。
+ *
+ * 在工厂方法模式中，通常会定义一个抽象工厂类，其中包含一个创建对象的抽象方法，
+ * 而具体的对象创建则由具体的子类实现。这样，每个具体的子类都可以根据需要创建不同类型的对象
+ * ，而客户端代码只需要通过抽象工厂类来调用工厂方法，而不需要关心具体的对象创建细节。
+ */
+abstract class StockFactory {
+    abstract StockQuery createStock();
 }

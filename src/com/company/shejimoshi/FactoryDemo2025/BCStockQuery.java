@@ -1,8 +1,8 @@
 package com.company.shejimoshi.FactoryDemo2025;
 
-public class ChannelStockQuery implements StockQuery{
+public class BCStockQuery implements StockQuery{
     @Override
     public void query() {
-        System.out.println("channel Stcok");
+        System.out.println("BC Stcok");
     }
 }

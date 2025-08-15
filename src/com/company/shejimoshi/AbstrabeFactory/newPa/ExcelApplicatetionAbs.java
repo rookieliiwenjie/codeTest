@@ -1,7 +1,7 @@
 package com.company.shejimoshi.AbstrabeFactory.newPa;
 
-public  class WordApplicatetionAbs extends ApplicatetionAbs{
+public  class ExcelApplicatetionAbs extends ApplicatetionAbs{
      void open(){
-         System.out.println("open word");
+         System.out.println("open excel");
      }
 }

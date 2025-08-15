@@ -1,2 +1,5 @@
-package com.company.shejimoshi.CompositeDemo;public interface FileSystemComponent {
+package com.company.shejimoshi.CompositeDemo;
+//组件
+public interface FileSystemComponent {
+    void displayInfo();
 }

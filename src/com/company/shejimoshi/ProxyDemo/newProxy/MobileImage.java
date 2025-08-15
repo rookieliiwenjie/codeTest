@@ -1,8 +1,8 @@
 package com.company.shejimoshi.ProxyDemo.newProxy;
 
-public class PcImage implements Image{
+public class MobileImage implements Image{
     @Override
     public void look() {
-        System.out.println("Pc");
+        System.out.println("mobile");
     }
 }

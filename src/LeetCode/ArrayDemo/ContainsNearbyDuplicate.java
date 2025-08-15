@@ -4,22 +4,10 @@ import java.util.*;
 
 public class ContainsNearbyDuplicate {
     /**
-     * 给你一个整数数组 nums 和一个整数 k ，判断数组中是否存在两个 不同的索引 i 和 j ，满足 nums[i] == nums[j] 且 abs(i
-     * - j) <= k 。如果存在，返回 true ；否则，返回 false 。
-     * <p>
-     * 示例 1：
-     * <p>
-     * 输入：nums = [1,2,3,1], k = 3
-     * 输出：true
-     * 示例 2：
-     * <p>
-     * 输入：nums = [1,0,1,1], k = 1
-     * 输出：true
-     * 示例 3：
-     * <p>
-     * 输入：nums = [1,2,3,1,2,3], k = 2
-     * 输出：false
-     *
+     * 给你一个整数数组 nums 和一个整数 k ，判断数组中是否存在两个 不同的索引 i 和 j ，
+     * 满足 nums[i] == nums[j] 且 abs(i- j) <= k 。
+     * 如果存在，返回 true ；否则，返回 false 。
+     * 
      * @param nums
      * @param k
      * @return
@@ -43,8 +31,8 @@ public class ContainsNearbyDuplicate {
 
     public static void main(String[] args) {
         ContainsNearbyDuplicate containsNearbyDuplicate = new ContainsNearbyDuplicate();
-//        [1,2,1]
-        int[] nums = {1, 2, 1};
+        // [1,2,1]
+        int[] nums = { 1, 2, 1 };
         int k = 0;
         boolean b = containsNearbyDuplicate.containsNearbyDuplicate2(nums, k);
         System.out.println(b);
@@ -59,8 +47,8 @@ public class ContainsNearbyDuplicate {
      * @return
      */
     public boolean containsNearbyDuplicate2(int[] nums, int k) {
-        //[1,2,3,1,2,3]
-        //k =2
+        // [1,2,3,1,2,3]
+        // k =2
         Set<Integer> nowNums = new HashSet<>();
         int bing = 0;
         for (int i = 0; i < nums.length; i++) {
@@ -90,6 +78,5 @@ public class ContainsNearbyDuplicate {
         }
         return false;
     }
-
 
 }
