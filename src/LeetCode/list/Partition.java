@@ -13,8 +13,51 @@ public class Partition {
         listNode2.next = listNode3;
         listNode3.next = listNode4;
         listNode4.next = listNode5;
-        System.out.println(partition(listNode, 3));
+        System.out.println(partitionNew(listNode, 3));
     }
+
+    public static ListNode partitionNew(ListNode head, int x) {
+        ListNode smallDummy = new ListNode(-1);
+        ListNode largeDummy = new ListNode(-1);
+        ListNode smallCur = smallDummy;
+        ListNode largeCur = largeDummy;
+        ListNode tmep = head;
+        while (tmep != null) {
+            if (tmep.val < x) {
+                smallCur.next = tmep;
+                smallCur = smallCur.next;
+            } else {
+                largeCur.next = tmep;
+                largeCur = largeCur.next;
+            }
+            tmep = tmep.next;
+        }
+        largeCur.next = null;
+        smallCur.next = largeDummy.next;
+        return smallDummy.next;
+    }
+
+    public ListNode partitionleetCode(ListNode head, int x) {
+        ListNode small = new ListNode(0);
+        ListNode smallHead = small;
+        ListNode large = new ListNode(0);
+        ListNode largeHead = large;
+        while (head != null) {
+            if (head.val < x) {
+                small.next = head;
+                small = small.next;
+            } else {
+                large.next = head;
+                large = large.next;
+            }
+            head = head.next;
+        }
+        large.next = null;
+        small.next = largeHead.next;
+        return smallHead.next;
+    }
+
+
 
     public static ListNode partition(ListNode head, int x) {
         if (head == null) {
@@ -77,11 +120,11 @@ public class Partition {
         ListNode curr = head;
         while (curr != null) {
             if (curr.val < x) {
-              curr.next = dummy.next;
-              dummy.next = curr;
-              if(dummyHead==dummy){
-                  dummyHead = curr;
-              }
+                curr.next = dummy.next;
+                dummy.next = curr;
+                if (dummyHead == dummy) {
+                    dummyHead = curr;
+                }
             } else {
                 dummyHead.next = curr;
                 dummyHead = dummyHead.next;

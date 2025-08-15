@@ -105,7 +105,7 @@ public class RemoveNthFromEnd {
 //        ListNode listNode = new ListNode(1);
 //        int n = 1;
         RemoveNthFromEnd removeNthFromEnd = new RemoveNthFromEnd();
-        ListNode listNode5 = removeNthFromEnd.removeNthFromEnd5(listNode, n);
+        ListNode listNode5 = removeNthFromEnd.removeNthFromEnd4(listNode, n);
     }
 
     /**

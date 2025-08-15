@@ -19,7 +19,45 @@ public class MergeTwoLists {
         l2.next = l22;
         ListNode l23 = new ListNode(4);
         l22.next = l23;
-        mergeTwoLists4(l1, l2);
+        mergeTwoListsNew(l1, l2);
+    }
+
+    //迭代
+    public static ListNode mergeTwoListsNew(ListNode list1, ListNode list2) {
+        ListNode dummy = new ListNode(-1);
+        ListNode pre = dummy;
+        while (list1 != null && list2 != null) {
+            ListNode next1 = list1.next;
+            ListNode next2 = list2.next;
+            if (list1.val < list2.val) {
+                list1.next = null;
+                pre.next = list1;
+                list1 = next1;
+            } else {
+                list2.next = null;
+                pre.next = list2;
+                list2 = next2;
+            }
+            pre = pre.next;
+        }
+        if (list1 != null || list2 != null) {
+            pre.next = list1 != null ? list1 : list2;
+        }
+        return dummy.next;
+    }
+
+    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        if (list1 == null) {
+            return list2;
+        } else if (list2 == null) {
+            return list1;
+        } else if (list1.val < list2.val) {
+            list1.next = mergeTwoLists(list1.next, list2);
+            return list1;
+        } else {
+            list2.next = mergeTwoLists(list1, list2.next);
+            return list2;
+        }
     }
 
     public static ListNode mergeTwoLists3(ListNode l1, ListNode l2) {
@@ -63,24 +101,24 @@ public class MergeTwoLists {
         return l1;
     }
 
-    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-
-        ListNode dum = new ListNode(0), cur = dum;
-        while (l1 != null || l2 != null) {
-            if (l1 == null || l2 == null) {
-                cur.next = l1 != null ? l1 : l2;
-                return dum.next;
-            } else if (l1.val > l2.val) {
-                cur.next = new ListNode(l2.val);
-                l2 = l2.next;
-            } else {
-                cur.next = new ListNode(l1.val);
-                l1 = l1.next;
-            }
-            cur = cur.next;
-        }
-        return dum.next;
-    }
+//    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+//
+//        ListNode dum = new ListNode(0), cur = dum;
+//        while (l1 != null || l2 != null) {
+//            if (l1 == null || l2 == null) {
+//                cur.next = l1 != null ? l1 : l2;
+//                return dum.next;
+//            } else if (l1.val > l2.val) {
+//                cur.next = new ListNode(l2.val);
+//                l2 = l2.next;
+//            } else {
+//                cur.next = new ListNode(l1.val);
+//                l1 = l1.next;
+//            }
+//            cur = cur.next;
+//        }
+//        return dum.next;
+//    }
 
     public ListNode mergeTwoLists2(ListNode l1, ListNode l2) {
         ListNode dum = new ListNode(0), cur = dum;
